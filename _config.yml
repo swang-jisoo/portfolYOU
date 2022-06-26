@@ -1,9 +1,7 @@
 ### Site Settings ###
 title               : JISOO LEE
 description         : >-
-                      I turn coffee :coffee: into code,
-                      use tabs over spaces
-                      and never broke production.
+                      I turn coffee :coffee: into code.
 
 baseurl             :                                       # "/portfolYOU" # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : swang-jisoo/swang-jisoo.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
@@ -21,13 +19,13 @@ author:
   image             : https://i.imgur.com/uyDNQnn.jpg
 #  behance           : your_username
 #  dribbble          : your_username
-  email             : username@domain.com
+  email             : swang-jislee@gmail.com
 #  facebook          : your_username
-  github            : your_username
+  github            : swang-jisoo
 #  gitlab            : your_username
 #  instagram         : your_username
 #  kaggle            : your_username
-  linkedin          : your_username
+  linkedin          : jisoo-lee
 #  medium            : your_username
 #  soundcloud        : your_username
 #  spotify           : your_username
