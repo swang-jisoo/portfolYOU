@@ -105,7 +105,6 @@ analytics:
 exclude:
   - README.md
   - LICENSE
-  - assets/**
   - "*.log"
 
 
