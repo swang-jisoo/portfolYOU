@@ -11,6 +11,7 @@ source              : ""
 collections_dir     : docs
 data_dir            : docs/_data
 #remote_theme        : YoussefRaafatNasry/portfolYOU
+lang                : en                                    # language of your site
 open_new_tab        : false
 
 
@@ -37,10 +38,6 @@ author:
 #  vimeo             : your_username
 #  youtube           : your_channel_name
 #  keybase           : your_username
-
-
-# Language of the website
-lang: en
 
 
 ### Navbar Settings ###
