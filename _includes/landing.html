@@ -16,18 +16,12 @@
 </div>
 -->
     
+<!-- inspired by Grape-Academic-Theme -->
 <div class="row">
   
   <div class="col-lg-4 col-md-6 mt-4">
-    <!--
-    <div id="container" class="my-2">
-      <div id="dummy"></div>
-      <div id="element">
-        <img src="{{ site.author.image }}" alt="{{ site.title }}" class="circle-image">
-      </div>
-    </div>
-    -->
     <div id="element">
+      <div id="dummy"></div>
       <img src="{{ site.author.image }}" alt="{{ site.title }}" class="circle-image">
     </div>
   </div>
@@ -35,6 +29,7 @@
   <div class="col-lg-4 col-md-8 mt-4">
     <h2>{{ site.author.name }}</h2>
     <div>{{ site.description | markdownify }}</div>
+    <!-- resume info -->
     <ul id="icons">
       {% include social.html %}
     </ul>
