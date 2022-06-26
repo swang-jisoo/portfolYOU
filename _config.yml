@@ -7,9 +7,9 @@ description         : >-
                  
 baseurl             : ""                         # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : swang-jisoo/swang-jisoo.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
-source              : ./
-collections_dir     : ./docs
-data_dir            : ./docs/_data
+# source              : ./
+collections_dir     : /docs
+data_dir            : /docs/_data
 #remote_theme        : YoussefRaafatNasry/portfolYOU
 open_new_tab        : false
 
@@ -41,10 +41,11 @@ author:
 
 ### Navbar Settings ###
 nav_exclude:
-  - ./docs/pages/tags.html
-  - ./docs/pages/404.html
-  - ./docs/pages/index.md
-  - ./docs/pages/documentation/**
+  - /docs/pages/tags.html
+  - /docs/pages/404.html
+  - /docs/pages/index.md
+  - /docs/pages/documentation/**
+  - /docs/pages/documentation/partials/**
   
   
 ### Posts ###
@@ -104,9 +105,9 @@ analytics:
 exclude:
   - README.md
   - LICENSE
-  - test/**
-  - docs/Gemfile
-  - docs/Gemfile.lock
+  - /test/**
+  - /docs/Gemfile
+  - /docs/Gemfile.lock
   - "*.log"
 
 
