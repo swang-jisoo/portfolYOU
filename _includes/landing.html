@@ -72,20 +72,23 @@
     <rect id="arrowBtn" width="100" height="100" opacity="0" x="550" y="220" style="cursor:pointer"/>
   </svg>
 </div>
-<script>
-  gsap.set('.main', {position:'fixed', background:'#fff', width:'100%', maxWidth:'1200px', height:'100%', top:0, left:'50%', x:'-50%'})
-  gsap.set('.scrollDist', {width:'100%', height:'200%'})
-  gsap.timeline({scrollTrigger:{trigger:'.scrollDist', start:'top top', end:'bottom bottom', scrub:1}})
-      .fromTo('.sky', {y:0},{y:-200}, 0)
-      .fromTo('.cloud1', {y:100},{y:-800}, 0)
-      .fromTo('.cloud2', {y:-150},{y:-500}, 0)
-      .fromTo('.cloud3', {y:-50},{y:-650}, 0)
-      .fromTo('.mountBg', {y:-10},{y:-100}, 0)
-      .fromTo('.mountMg', {y:-30},{y:-250}, 0)
-      .fromTo('.mountFg', {y:-50},{y:-600}, 0)
 
-  $('#arrowBtn').on('mouseenter', (e)=>{ gsap.to('.arrow', {y:10, duration:0.8, ease:'back.inOut(3)', overwrite:'auto'}); })
-  $('#arrowBtn').on('mouseleave', (e)=>{ gsap.to('.arrow', {y:0, duration:0.5, ease:'power3.out', overwrite:'auto'}); })
-  $('#arrowBtn').on('click', (e)=>{ gsap.to(window, {scrollTo:innerHeight, duration:1.5, ease:'power1.inOut'}); }) 
-  // scrollTo requires the ScrollTo plugin (not to be confused w/ ScrollTrigger)
-</script>
+<!--- a panel like the below will really be present underneath videoPanel on the actual site/page  -->
+<section class="px-16 py-40 bg-gray-200">
+
+    <h2 class="uppercase font-display">About us</h2>
+    <h3 class="w-9/12 pt-4 pb-8 font-serif text-6xl leading-tight tracking-wide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi quo quos dolor cumque adipisci, hic in.</h3>
+    <a href="/about" class="pillBtn">Explore</a>
+
+</section>
+
+<!--- the below is just filler to make page scroll  -->
+<div class="text-xl p-16" style="min-height:1000px">
+  
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptates! Qui repudiandae inventore impedit odio dicta suscipit aut eos fugit illo reiciendis! Ipsa alias aperiam, quisquam aut consequatur pariatur optio!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptates! Qui repudiandae inventore impedit odio dicta suscipit aut eos fugit illo reiciendis! Ipsa alias aperiam, quisquam aut consequatur pariatur optio!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptates! Qui repudiandae inventore impedit odio dicta suscipit aut eos fugit illo reiciendis! Ipsa alias aperiam, quisquam aut consequatur pariatur optio!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptates! Qui repudiandae inventore impedit odio dicta suscipit aut eos fugit illo reiciendis! Ipsa alias aperiam, quisquam aut consequatur pariatur optio!</p>
+  
+</div>
+
