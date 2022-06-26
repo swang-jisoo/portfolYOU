@@ -4,14 +4,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  {% capture title = page.title | default: site.title | escape %}
+  {% assign title = page.title | default: site.title | escape %}
   {% if page.name and page.collection == 'projects' %}
-    {% capture title = page.name | escape %}
+    {% assign title = page.name | escape %}
   {% endif %}
-  {% capture description = page.description | default: site.description | strip_html | strip_newlines | truncate: 160 %}
-  {% capture image = page.image | default: site.author.image %}
+  {% assign description = page.description | default: site.description | strip_html | strip_newlines | truncate: 160 %}
+  {% assign image = page.image | default: site.author.image %}
 
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ description }}">
   <meta property="og:image" content="{{ image }}">
