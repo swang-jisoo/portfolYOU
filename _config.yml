@@ -104,9 +104,6 @@ analytics:
 exclude:
   - README.md
   - LICENSE
-  - test/**
-  - docs/Gemfile
-  - docs/Gemfile.lock
   - "*.log"
 
 
