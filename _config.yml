@@ -7,7 +7,7 @@ description         : >-
                  
 baseurl             : ""                         # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : swang-jisoo/swang-jisoo.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
-# source              : ./
+source              : /docs
 collections_dir     : /docs
 data_dir            : /docs/_data
 #remote_theme        : YoussefRaafatNasry/portfolYOU
@@ -41,11 +41,11 @@ author:
 
 ### Navbar Settings ###
 nav_exclude:
-  - /docs/pages/tags.html
-  - /docs/pages/404.html
-  - /docs/pages/index.md
-  - /docs/pages/documentation/**
-  - /docs/pages/documentation/partials/**
+  - docs/pages/tags.html
+  - docs/pages/404.html
+  - docs/pages/index.md
+  - docs/pages/documentation/**
+  - docs/pages/documentation/partials/**
   
   
 ### Posts ###
