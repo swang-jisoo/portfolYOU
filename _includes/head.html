@@ -1,4 +1,8 @@
 <head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   {% assign title = page.title | default: site.title | escape %}
   {% assign description = page.description | default: site.description | strip_html | strip_newlines | truncate: 160 %}
@@ -8,9 +12,6 @@
     {% assign title = page.name | escape %}
   {% endif %}
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ title }}">
@@ -19,8 +20,8 @@
 
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">
-
-  <link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | relative_url }}">
+  
+  <link rel="shortcut icon" type="image/x-icon" href="{{ 'assets/favicon.ico' | relative_url }}">
 
   <!-- Theme style -->
   <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
@@ -36,5 +37,17 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+</head>
+
+<head>
+
+  {% include scripts/jquery.html %}
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@{{ site.fontawesome.version }}/css/all.min.css" integrity="{{ site.fontawesome.integrity }}" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@{{ site.academicons.version }}/css/academicons.min.css" integrity="{{ site.academicons.integrity }}" crossorigin="anonymous">
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+  
 
 </head>
