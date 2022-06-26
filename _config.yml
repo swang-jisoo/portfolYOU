@@ -7,8 +7,8 @@ description         : >-
                       
 #source              : ./
 #collections_dir     : ./docs
-#data_dir            : ./docs/_data
-baseurl             : "/portfolYOU"                         # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+#data_dir            : /docs/_data
+baseurl             : ""                         # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : swang-jisoo/swang-jisoo.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 #remote_theme        : YoussefRaafatNasry/portfolYOU
 open_new_tab        : false
@@ -41,10 +41,10 @@ author:
 
 ### Navbar Settings ###
 nav_exclude:
-  - docs/pages/tags.html
-  - docs/pages/404.html
-  - docs/pages/index.md
-  - docs/pages/documentation/**
+  - /docs/pages/tags.html
+  - /docs/pages/404.html
+  - /docs/pages/index.md
+  - /docs/pages/documentation/**
   
   
 ### Posts ###
