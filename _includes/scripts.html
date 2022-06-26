@@ -42,3 +42,17 @@
   $('#arrowBtn').on('click', (e)=>{ gsap.to(window, {scrollTo:innerHeight, duration:1.5, ease:'power1.inOut'}); }) 
   // scrollTo requires the ScrollTo plugin (not to be confused w/ ScrollTrigger)
 </script>
+
+<script>
+    var anim = gsap.to("#title", { 
+              y: () => { return window.innerHeight * 0.75 }, ease: "none",
+              scrollTrigger: {
+                trigger: '.video-panel',
+                start: () => 'top top',
+                end: () => "+=" + ( window.innerHeight * 0.75 ),
+                // scrub: true,
+                scrub: 0.0,
+                invalidateOnRefresh: true,
+              }   
+           })
+</script>
