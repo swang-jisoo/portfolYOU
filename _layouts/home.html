@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% if site.greeting.enable == true and site.greeting.top == true %}
+{% if site.greeting.enable == true and site.greeting.before_navbar == true %}
   <div class="flex-shrink-0 container-fluid">
     {% include landing.html %}
   </div>
@@ -12,7 +12,7 @@ layout: default
 
   {% include navbar.html %}
   
-  {% if site.greeting.enable == true and site.greeting.top == false %}
+  {% if site.greeting.enable == true and site.greeting.before_navbar == false %}
     {% include landing.html %}
   {% endif %}
   
