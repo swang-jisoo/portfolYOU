@@ -10,11 +10,11 @@ collections_dir     : docs
 data_dir            : docs/_data
 #remote_theme        : YoussefRaafatNasry/portfolYOU
 lang                : en                                    # language of your site
+open_new_tab        : false
 greeting: 
   enable            : true                                  # enable _include/landing.html
-  top               : false
+  before_navbar     : false
   type              : responsive_center_img                 # responsive_center_img, static_left_img, cloud, globe
-open_new_tab        : false
 
 
 ### Author Info ###
