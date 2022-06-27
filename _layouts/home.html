@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% if site.greeting == true %}
+{% if site.greeting.enable == true and site.greeting.top == true %}
   <div class="flex-shrink-0 container-fluid">
     {% include landing.html %}
   </div>
@@ -11,6 +11,10 @@ layout: default
 <div class="h-100 flex-shrink-0 container mt-5">
 
   {% include navbar.html %}
+  
+  {% if site.greeting.enable == true and site.greeting.top == false %}
+    {% include landing.html %}
+  {% endif %}
   
   <div class="col-lg-10 mx-auto mt-5 markdown-body">
     {{ content }}
