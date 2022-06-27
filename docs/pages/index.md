@@ -3,5 +3,12 @@ layout: home
 permalink: /
 ---
 
-<!-- {% include landing.html %} -->
-## Hi I'm Jisoo Lee ##
+{% include about/timeline.html %} 
+<!--
+<div class="row">
+{% include about/timeline.html title="Recent News" source=site.data.news %}
+</div>
+-->
+<!-- 
+{% include landing.html %} 
+-->
