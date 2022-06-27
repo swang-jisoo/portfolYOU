@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: home
 permalink: /
 ---
 
-{% include landing.html %}
+<!-- {% include landing.html %} -->
+
