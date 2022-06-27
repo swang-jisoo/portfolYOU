@@ -13,6 +13,7 @@ lang                : en                                    # language of your s
 greeting: 
   enable            : true                                  # enable _include/landing.html
   top               : false
+  type              : responsive_center_img                 # responsive_center_img, static_left_img, cloud, globe
 open_new_tab        : false
 
 
