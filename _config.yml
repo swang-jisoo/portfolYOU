@@ -10,7 +10,7 @@ collections_dir     : docs
 data_dir            : docs/_data
 #remote_theme        : YoussefRaafatNasry/portfolYOU
 lang                : en                                    # language of your site
-greeting            : false                                  # enable _include/landing.html
+greeting            : true                                  # enable _include/landing.html
 open_new_tab        : false
 
 
