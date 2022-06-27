@@ -2,8 +2,9 @@
 title               : JISOO LEE
 description         : >-
                       I turn coffee :coffee: into code.
+url                 : "https://swang-jisoo.github.io"
+baseurl             : ""                                    # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 
-baseurl             :                                       # "/portfolYOU" # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : swang-jisoo/swang-jisoo.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 source              : 
 collections_dir     : docs
@@ -38,6 +39,14 @@ author:
 #  keybase           : your_username
 
 
+
+### Exclude from processing ###
+exclude:
+  - README.md
+  - LICENSE
+  - "*.log"
+
+
 ### Navbar Settings ###
 nav_exclude:
   - docs/pages/tags.html
@@ -47,7 +56,8 @@ nav_exclude:
   
   
 ### Posts ###
-permalink: /blog/:title
+### Outputing ###
+permalink: /:title #/blog/:title
 
 
 ### Collections ###
@@ -65,11 +75,13 @@ defaults:
       path: ""
       type: "posts"
     values:
+      #layout: "post"
       comments: false                   # Set to true to enable disqus comments
   - scope:
       path: ""
       type: "more"
     values:
+      layout: "page"
       comments: false                   # Set to true to enable disqus comments
   - scope:
       path: ""
@@ -102,13 +114,6 @@ analytics:
   enabled: false                                        # Set true to enable analytics
   google:
     tracking_id: your-google-tracking-id
-
-
-### Exclude from processing ###
-exclude:
-  - README.md
-  - LICENSE
-  - "*.log"
 
 
 ### Buy me a coffee ###
