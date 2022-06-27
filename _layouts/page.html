@@ -2,9 +2,13 @@
 layout: default
 ---
 
-{% include navbar.html %}
+<div class="h-100 flex-shrink-0 container mt-5">
+  <!-- <div class="col-lg-10 mx-auto markdown-body"> -->
+  {% include navbar.html %}
+  <!-- </div> -->
+</div> 
 
-<div class="col-lg-10 mx-auto markdown-body">
+<div class="flex-shrink-0 container mt-5 col-lg-10 mx-auto mt-5 markdown-body">
   {{ content }}
 </div>
 
