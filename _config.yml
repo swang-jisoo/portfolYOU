@@ -68,6 +68,11 @@ defaults:
       comments: false                   # Set to true to enable disqus comments
   - scope:
       path: ""
+      type: "more"
+    values:
+      comments: false                   # Set to true to enable disqus comments
+  - scope:
+      path: ""
       type: "projects"
     values:
       layout: "page"
