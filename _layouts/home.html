@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+{% if site.intro == true %}
+  {% include landing.html %}
+{% endif %}
+
+{% include navbar.html %}
+
+<div class="col-lg-10 mx-auto markdown-body">
+  {{ content }}
+</div>
+
+{% include footer.html %}
