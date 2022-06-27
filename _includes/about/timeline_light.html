@@ -34,13 +34,13 @@
   <div class="tiemline-body">
     {% for item in include.source %}
       <li class="timeline-item">
-        <h4>{{ item.title }}</h4>
-
         {% if item.from and item.to %}
-          <h6 class="date">{{ item.from }} — {{ item.to }}</h6>
+          <small class="date">{{ item.from }} — {{ item.to }}</small>
         {% elsif item.date %}
-          <h6 class="date">{{ item.date }}</h6>
+          <small class="date">{{ item.date }}</small>
         {% endif %}
+        
+        <h4>{{ item.title }}</h4>
 
         {% if item.description %}
           <p>{{ item.description }}</p>
