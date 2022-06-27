@@ -1,113 +1,106 @@
-<!-- Fine Circle Responsive Image -->
-<!--
-<section id="greeting" class="row justify-content-center align-items-center">
-  <div class="col-lg-4 col-md-6 text-center mt-4">
-    
-    <div id="container" class="my-2">
-      <div id="dummy"></div>
-      <div id="element">
-        <img src="{{ site.author.image }}" alt="{{ site.title }}" class="circle-image wow animated zoomIn" data-wow-delay=".1s">
+{% if site.greeting.type == responsive_center_img %}
+  <!-- Fine Circle Responsive Image -->
+  <section id="greeting" class="row justify-content-center align-items-center">
+    <div class="col-lg-4 col-md-6 text-center mt-4">
+
+      <div id="container" class="my-2">
+        <div id="dummy"></div>
+        <div id="element">
+          <img src="{{ site.author.image }}" alt="{{ site.title }}" class="circle-image wow animated zoomIn" data-wow-delay=".1s">
+        </div>
       </div>
+
+      <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">{{ site.description }}</p>
+      
+      <!-- <br><br><br><br>
+      <p class="text-muted wow animated slideInDown" data-wow-delay=".15s">
+        <a class="btn btn-outline-primary button-round m-4" href="#news">▼</a>
+      </p> -->
+
+    </div>
+  </section>
+  <!-- <section id="news" class="row justify-content-center align-items-center p-4">
+    <h3>Recent News</h3>
+  </section> -->
+
+{% elsif site.greeting.type == static_left_img %}
+  <!-- inspired by Grape-Academic-Theme -->
+  <section id="greeting" class="row">
+    <div class="col-lg-4 col-md-6 mt-4">
+      <img src="{{ site.author.image }}" alt="{{ site.title }}" class="circle-image">
     </div>
 
-    <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">{{ site.description }}</p>
-    
-    <br><br><br><br>
-    <p class="text-muted wow animated slideInDown" data-wow-delay=".15s">
-      <a class="btn btn-outline-primary button-round m-4" href="#news">▼</a>
-    </p> 
+    <div class="col-lg-4 col-md-8 mt-4">
+      <h2>{{ site.author.name }}</h2>
+      <div>{{ site.description | markdownify }}</div>
+      <ul id="icons">
+        {% include social.html %}
+      </ul>
+    </div>
+  </section>
 
-  </div>
-</section>
-<section id="news" class="row justify-content-center align-items-center p-4">
-  <h3>Recent News</h3>
-</section>
--->
-    
-<!-- inspired by Grape-Academic-Theme -->
-<!--
-<div class="row">
-  
-  <div class="col-lg-4 col-md-6 mt-4">
-    <img src="{{ site.author.image }}" alt="{{ site.title }}" class="circle-image">
-  </div>
-  
-  <div class="col-lg-4 col-md-8 mt-4">
-    <h2>{{ site.author.name }}</h2>
-    <div>{{ site.description | markdownify }}</div>
-    <ul id="icons">
-      {% include social.html %}
-    </ul>
-  </div>
-  
-</div>
--->
+{% elsif site.greeting.type == cloud %}
+  <!-- ref: https://codemyui.com/scroll-through-image-to-change-text-parallax-effect/ -->
+  <!-- or: https://codemyui.com/title-hide-behind-featured-image-on-scroll/ -->
+  <!-- This is a recreation of Unfold's (https://dribbble.com/unfold) parallax scene: https://cdn.dribbble.com/users/14268/screenshots/3275340/northface.gif -->
+  <div class="scrollDist"></div>
+  <div class="main">
+    <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+      <mask id="m">
+        <g class="cloud1">
+          <rect fill="#fff" width="100%" height="801" y="799" />
+          <image xlink:href="https://assets.codepen.io/721952/cloud1Mask.jpg" width="1200" height="800"/>
+        </g>
+      </mask>
 
-<!-- This is a recreation of Unfold's (https://dribbble.com/unfold) parallax scene: https://cdn.dribbble.com/users/14268/screenshots/3275340/northface.gif -->
-<!--
-<div class="scrollDist"></div>
-<div class="main">
-  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
-    <mask id="m">
-      <g class="cloud1">
-        <rect fill="#fff" width="100%" height="801" y="799" />
-        <image xlink:href="https://assets.codepen.io/721952/cloud1Mask.jpg" width="1200" height="800"/>
+      <image class="sky" xlink:href="https://assets.codepen.io/721952/sky.jpg"  width="1200" height="590" />
+      <image class="mountBg" xlink:href="https://assets.codepen.io/721952/mountBg.png" width="1200" height="800"/>    
+      <image class="mountMg" xlink:href="https://assets.codepen.io/721952/mountMg.png" width="1200" height="800"/>    
+      <image class="cloud2" xlink:href="https://assets.codepen.io/721952/cloud2.png" width="1200" height="800"/>    
+      <image class="mountFg" xlink:href="https://assets.codepen.io/721952/mountFg.png" width="1200" height="800"/>
+      <image class="cloud1" xlink:href="https://assets.codepen.io/721952/cloud1.png" width="1200" height="800"/>
+      <image class="cloud3" xlink:href="https://assets.codepen.io/721952/cloud3.png" width="1200" height="800"/>
+      <text fill="#fff" x="350" y="200">EXPLORE</text>
+      <polyline class="arrow" fill="#fff" points="599,250 599,289 590,279 590,282 600,292 610,282 610,279 601,289 601,250" />
+
+      <g mask="url(#m)">
+        <rect fill="#fff" width="100%" height="100%" />      
+        <text x="350" y="200" fill="#162a43">FURTHER</text>
       </g>
-    </mask>
-    
-    <image class="sky" xlink:href="https://assets.codepen.io/721952/sky.jpg"  width="1200" height="590" />
-    <image class="mountBg" xlink:href="https://assets.codepen.io/721952/mountBg.png" width="1200" height="800"/>    
-    <image class="mountMg" xlink:href="https://assets.codepen.io/721952/mountMg.png" width="1200" height="800"/>    
-    <image class="cloud2" xlink:href="https://assets.codepen.io/721952/cloud2.png" width="1200" height="800"/>    
-    <image class="mountFg" xlink:href="https://assets.codepen.io/721952/mountFg.png" width="1200" height="800"/>
-    <image class="cloud1" xlink:href="https://assets.codepen.io/721952/cloud1.png" width="1200" height="800"/>
-    <image class="cloud3" xlink:href="https://assets.codepen.io/721952/cloud3.png" width="1200" height="800"/>
-    <text fill="#fff" x="350" y="200">EXPLORE</text>
-    <polyline class="arrow" fill="#fff" points="599,250 599,289 590,279 590,282 600,292 610,282 610,279 601,289 601,250" />
-    
-    <g mask="url(#m)">
-      <rect fill="#fff" width="100%" height="100%" />      
-      <text x="350" y="200" fill="#162a43">FURTHER</text>
-    </g>
-    
-    <rect id="arrowBtn" width="100" height="100" opacity="0" x="550" y="220" style="cursor:pointer"/>
-  </svg>
-</div>
--->
 
+      <rect id="arrowBtn" width="100" height="100" opacity="0" x="550" y="220" style="cursor:pointer"/>
+    </svg>
+  </div>
 
-<!--- this is the videoPanel area i am concered with -->
+{% elsif site.greeting.type == globe %}
+  <!-- ref: https://greensock.com/forums/topic/25847-timeline-scroll-animation-best-approach/ -->
+  <!-- this is the videoPanel area i am concered with -->
+  <div class="video-panel relative order-1 w-full h-screen bg-black anim overflow-hidden">
 
-<div class="video-panel relative order-1 w-full h-screen bg-black anim overflow-hidden">
+      <div class="absolute z-10 flex items-center justify-center w-full h-screen">
+          <h1 id="title" class="text-white text-6xl relative top-0 origin-top uppercase bold">{{ site.title }}</h1>
+      </div>
 
-    <div class="absolute z-10 flex items-center justify-center w-full h-screen">
-        <h1 id="title" class="text-white text-6xl relative top-0 origin-top uppercase bold">Website title</h1>
-    </div>
+      <div class="absolute w-full h-screen z-9"><video src="http://learn.shayhowe.com/assets/misc/courses/html-css/adding-media/earth.mp4" class="object-cover w-full h-screen" autoplay loop muted></video></div>
+  </div>
 
+  <!-- a panel like the below will really be present underneath videoPanel on the actual site/page  -->
+  <section class="px-16 py-40 bg-gray-200">
 
-    <div class="absolute w-full h-screen z-9"><video src="http://learn.shayhowe.com/assets/misc/courses/html-css/adding-media/earth.mp4" class="object-cover w-full h-screen" autoplay loop muted></video></div>
-</div>
+      <h2 class="uppercase font-display">About us</h2>
+      <h3 class="w-9/12 pt-4 pb-8 font-serif text-6xl leading-tight tracking-wide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi quo quos dolor cumque adipisci, hic in.</h3>
+      <a href="/about" class="pillBtn">Explore</a>
 
+  </section>
 
-<!--- a panel like the below will really be present underneath videoPanel on the actual site/page  -->
-<!--
-<section class="px-16 py-40 bg-gray-200">
+  <!-- the below is just filler to make page scroll  -->
+  <div class="text-xl p-16" style="min-height:1000px">
 
-    <h2 class="uppercase font-display">About us</h2>
-    <h3 class="w-9/12 pt-4 pb-8 font-serif text-6xl leading-tight tracking-wide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi quo quos dolor cumque adipisci, hic in.</h3>
-    <a href="/about" class="pillBtn">Explore</a>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptates! Qui repudiandae inventore impedit odio dicta suscipit aut eos fugit illo reiciendis! Ipsa alias aperiam, quisquam aut consequatur pariatur optio!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptates! Qui repudiandae inventore impedit odio dicta suscipit aut eos fugit illo reiciendis! Ipsa alias aperiam, quisquam aut consequatur pariatur optio!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptates! Qui repudiandae inventore impedit odio dicta suscipit aut eos fugit illo reiciendis! Ipsa alias aperiam, quisquam aut consequatur pariatur optio!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptates! Qui repudiandae inventore impedit odio dicta suscipit aut eos fugit illo reiciendis! Ipsa alias aperiam, quisquam aut consequatur pariatur optio!</p>
 
-</section>
--->
+  </div>
 
-<!--- the below is just filler to make page scroll  -->
-<!--
-<div class="text-xl p-16" style="min-height:1000px">
-  
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptates! Qui repudiandae inventore impedit odio dicta suscipit aut eos fugit illo reiciendis! Ipsa alias aperiam, quisquam aut consequatur pariatur optio!</p>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptates! Qui repudiandae inventore impedit odio dicta suscipit aut eos fugit illo reiciendis! Ipsa alias aperiam, quisquam aut consequatur pariatur optio!</p>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptates! Qui repudiandae inventore impedit odio dicta suscipit aut eos fugit illo reiciendis! Ipsa alias aperiam, quisquam aut consequatur pariatur optio!</p>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptates! Qui repudiandae inventore impedit odio dicta suscipit aut eos fugit illo reiciendis! Ipsa alias aperiam, quisquam aut consequatur pariatur optio!</p>
-  
-</div>
--->
+{% endif %}
