@@ -1,3 +1,4 @@
+<!--
 <div class="col-lg mt-4">
   
   <h2 class="mb-4">{{ include.title }}</h2>
@@ -5,7 +6,6 @@
   <div class="timeline-body bg-themed">
     
     {% for item in include.source %}
-    
       <div class="timeline-item">
         <div class="content">
           
@@ -18,12 +18,28 @@
           {% endif %}
           
           <p>{{ item.description }}</p>
-          
         </div>
       </div>
-    
     {% endfor %}
     
   </div>
-  
 </div>
+
+<p class="title">{{ include.title }}</p>
+-->
+
+<ul class="tiemline-body">
+  {% for item in include.source %}
+    <li class="timeline-item">
+      <h3>{{ item.title }}</h3>
+      
+      {% if item.from and item.to %}
+        <h6 class="date">{{ item.from }} — {{ item.to }}</h6>
+      {% elsif item.date %}
+        <h6 class="date">{{ item.date }}</h6>
+      {% endif %}
+      
+      <p>{{ item.experience }}</p>
+    </li>
+  {% endfor %}
+</ul>
