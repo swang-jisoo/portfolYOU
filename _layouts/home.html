@@ -3,13 +3,19 @@ layout: default
 ---
 
 {% if site.greeting == true %}
-  {% include landing.html %}
+  <div class="flex-shrink-0 container-fluid">
+    {% include landing.html %}
+  </div>
 {% endif %}
 
-{% include navbar.html %}
+<div class="h-100 flex-shrink-0 container mt-5">
 
-<div class="col-lg-10 mx-auto markdown-body">
-  {{ content }}
-</div>
-
-{% include footer.html %}
+  {% include navbar.html %}
+  
+  <div class="col-lg-10 mx-auto mt-5 markdown-body">
+    {{ content }}
+  </div>
+  
+  {% include footer.html %}
+  
+</div> 
