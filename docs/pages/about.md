@@ -12,12 +12,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <!-- [pdf]() -->
 
-
+<!--
 <div class="row">
 {% include about/timeline.html title="Education" source={{ '/docs/_data/timeline' | relative_url }} %}
 </div>
 
-<!--
+
 <div class="row">
 {% include about/timeline.html title="Experience" source=site.data.timeline %}
 </div>
