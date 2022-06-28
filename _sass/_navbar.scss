@@ -12,7 +12,7 @@
     background: #fff;
     color: #474543;
     transition-property: all, color, background;
-    transition-duration: 0.3s, 600ms, 600ms;
+    transition-duration: 0.1s, 600ms, 600ms;
     transition-timing-function: ease, ease, ease-in-out;
     transition-delay: 0s, 0s, 0s;
   }
@@ -30,17 +30,18 @@
 
 .scrolled-down{
   transform: translateY(-100%); 
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .scrolled-up{
   background: #fff;
   color: #474543;
   transform: translateY(0); 
-  transition-property: all, background;
-  transition-duration: 0.3s, 600ms;
-  transition-timing-function: ease, ease-in-out;
-  transition-delay: 0s, 0s;
+  transition: all 0.1s ease-in-out;
+  //transition-property: all, background;
+  //transition-duration: 0.1s, 0s;
+  //transition-timing-function: ease, ease;
+  //transition-delay: 0s, 0s;
 }
 
 // customized container //
