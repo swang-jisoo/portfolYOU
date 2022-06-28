@@ -1,5 +1,5 @@
 .site-header {
-  background: #fd9e02;
+  //background: #fd9e02;
   width: 100%;
   min-height: 88px;
   position: fixed;
@@ -15,6 +15,11 @@
     transition-timing-function: ease, ease-in-out;
     transition-delay: 0s, 0s;
   }
+}
+
+,is-top{
+  background: #2ec4b6;
+  color: #474543;
 }
 
 .scrolled-down{
@@ -37,7 +42,7 @@
   padding: 0px 1.5rem 0px 1.5rem;
   width: 100%;
   max-width: 71.25em;
-  min-height: 100%;
+  min-height: 88px;
 }
 
 .site-nav {
