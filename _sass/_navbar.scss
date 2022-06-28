@@ -1,5 +1,5 @@
 .site-header {
-  //background: #fd9e02;
+  background: #2ec4b6;
   width: 100%;
   min-height: 88px;
   position: fixed;
@@ -74,15 +74,14 @@
   background: $primary;
 }
 
-.navbar-brand {
-  margin-bottom: -14px;
-  &::after {
-    margin-top: -0.25em;
-  }
-}
+//.navbar-brand {
+//  margin-bottom: -14px;
+//  &::after {
+//    margin-top: -0.25em;
+//  }
+//}
 
-.nav-link,
-.navbar-brand {
+.nav-link, .navbar-brand {
   &::after {
     @extend .link-after;
     width: 0;
@@ -93,7 +92,7 @@
   }
 }
 
-.nav-item.active {
+.nav-item .active {
   font-weight: 400;
   &::after {
     @extend .link-after;
