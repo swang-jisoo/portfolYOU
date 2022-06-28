@@ -20,6 +20,10 @@
 .is-top{
   background: #2ec4b6;
   color: #474543;
+  transition-property: all, background;
+  transition-duration: 0s, 0s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
 }
 
 .scrolled-down{
