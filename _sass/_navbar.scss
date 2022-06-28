@@ -1,6 +1,6 @@
 .site-header {
   min-height: 88px;
-  z-index: 150;
+  //z-index: 150;
   
   &:hover {
     background: #fff;
@@ -20,11 +20,10 @@
   hight: 88px;
 }
 
-.site-nav {
-  position: fixed;
-  opacity: 0;
-  
-}
+//.site-nav {
+//  position: fixed;
+//  opacity: 0;
+//}
 
 .site-header-top {
   background: #ffc029;
@@ -36,10 +35,8 @@
   left: 0;
   right: 0;
   top: 0;
-  z-index: 99;
+//  z-index: 99;
 }
-
-
 
 .link-after {
   content: "";
