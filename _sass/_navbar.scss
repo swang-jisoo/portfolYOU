@@ -3,7 +3,7 @@
   min-height: 88px;
   position: fixed;
   top: 0;
-  transition: top 0.3s; // Transition effect when sliding down (and up)
+  //transition: top 0.3s; // Transition effect when sliding down (and up)
   //z-index: 150;
   
   &:hover {
@@ -14,6 +14,13 @@
     transition-timing-function: ease, ease-in-out;
     transition-delay: 0s, 0s;
   }
+}
+
+.scrolled-down{
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+  transform:translateY(0); transition: all 0.3s ease-in-out;
 }
 
 .inner-container {
