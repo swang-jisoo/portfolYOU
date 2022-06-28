@@ -6,7 +6,7 @@
         
         <!-- <div class="site-branding col-xs col-md-2 col-sm-4"> -->
         <a class="navbar-brand" href="{{ site.baseurl }}/">
-          <h5><b>{{ site.title }}</b></h5>
+          <h4><b>{{ site.title }}</b></h4>
         </a>
         <!-- </div> -->
         
@@ -64,7 +64,7 @@
               <a class="nav-item nav-link {{ active_status }}" 
                  href="{{ url }}" {%- if html_page.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}
                  >
-                {{ html_page.title }}
+                <h5>{{ html_page.title }}</h5>
               </a>
 
             {% endfor %}
