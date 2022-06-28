@@ -1,7 +1,7 @@
 .site-header {
   background: transparent;
   color: #fff;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2); //13 1px 2px 0 rgb(0 0 0 / 15%);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.15); 
   width: 100%;
   min-height: 88px;
   position: fixed;
@@ -11,10 +11,10 @@
   &:hover {
     background: #fff;
     color: #474543;
-    transition-property: all, background;
-    transition-duration: 0.3s, 600ms;
-    transition-timing-function: ease, ease-in-out;
-    transition-delay: 0s, 0s;
+    transition-property: all, color, background;
+    transition-duration: 0.3s, 600ms, 600ms;
+    transition-timing-function: ease, ease, ease-in-out;
+    transition-delay: 0s, 0s, 0s;
   }
 }
 
