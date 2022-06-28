@@ -64,7 +64,7 @@
               <a class="nav-item nav-link {{ active_status }}" 
                  href="{{ url }}" {%- if html_page.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}
                  >
-                <h5>{{ html_page.title }}</h5>
+                {{ html_page.title }}
               </a>
 
             {% endfor %}
