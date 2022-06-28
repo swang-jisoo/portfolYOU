@@ -1,11 +1,14 @@
 * {
+  box-sizing: border-box;
+}
+
+html, body {
   background: #fcf8ee;
   color: #474543;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   font-weight: light;
   display: block;
-  box-sizing: border-box;
   line-height: 1.5;
   border: 0;
   margin: 0;
@@ -29,7 +32,6 @@
 .inner-container {
   margin: 0 auto 0 auto;
   padding: 0px 1.5rem 0px 1.5rem;
-  display: border-box;
   width: 100%;
   max-width: 71.25em;
   min-height: 100%;
