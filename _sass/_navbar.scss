@@ -1,5 +1,9 @@
 .site-header {
+  width: 100%;
   min-height: 88px;
+  position: fixed;
+  top: 0;
+  transition: top 0.3s; // Transition effect when sliding down (and up)
   //z-index: 150;
   
   &:hover {
