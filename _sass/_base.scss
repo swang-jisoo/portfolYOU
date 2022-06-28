@@ -1,31 +1,34 @@
-//html, body, div, header, nav, footer {
-//  //background: #fcf8ee;
-//  //color: #474543;
-//  font-family: 'Montserrat', sans-serif;
-//  font-size: 1rem;
-//  font-weight: light;
-//  display: block;
-//  border: 0;
-//  margin: 0;
-//  padding: 0;
-//  min-height: 100%;
-//  position: relative;
-//  vertical-align: baseline;
-//  cursor: auto;
-//}
+html, body, div, section, article, header, nav, footer {
+  background: #fcf8ee;
+  color: #474543;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: light;
+  display: block;
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+  cursor: auto;
+}
 
-//article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-//  display: block;
-//}
+::selection {
+    background-color: #4cd8b0;
+    color: #fff;
+}
 
 // fonts //
-//.light {
-//  font-weight: 300;
-//}
+.light {
+  font-weight: 300;
+}
 
-//.regular {
-//  font-weight: 400;
-//}
+.regular {
+  font-weight: 400;
+}
 
 // customed container //
 //.inner-container {
