@@ -1,10 +1,13 @@
 .site-header {
   min-height: 88px;
-  background: #fff;
   transition-property: all, background;
   transition-duration: 0.3s, 600ms;
   transition-timing-function: ease, ease-in-out;
   transition-delay: 0s, 0s;
+  
+  &:hover {
+    background: #fff;
+  }
 }
 
 .link-after {
