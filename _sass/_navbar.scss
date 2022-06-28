@@ -1,5 +1,5 @@
-.navbar-font {
-    font-size: 1rem;
+.row {
+    min-height: 88px;
 }
 
 .link-after {
@@ -9,6 +9,13 @@
   background: $primary;
 }
 
+.navbar-brand {
+  margin-bottom: -14px;
+  &::after {
+    margin-top: -0.25em;
+  }
+}
+
 .nav-link,
 .navbar-brand {
   &::after {
@@ -16,25 +23,17 @@
     width: 0;
     transition: width 0.35s;
   }
-
   &:hover::after {
     width: 100%;
   }
 }
 
 .nav-item.active {
-  font-size: 1rem;
-  font-weight: bold;
-
+  font-weight: 400;
   &::after {
     @extend .link-after;
     width: 100% !important;
   }
 }
 
-.navbar-brand {
-  margin-bottom: -14px;
-  &::after {
-    margin-top: -0.25em;
-  }
-}
+
