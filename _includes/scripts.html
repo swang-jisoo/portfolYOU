@@ -31,15 +31,16 @@
         document.body.style.paddingTop = navbar_height + 'px';
 
         if(el_autohide){
-            var last_scroll_top = 0;
+            var last_scroll_amt = 0;
             window.addEventListener('scroll', function() {
-                let scroll_top = window.scrollY;
-                if (last_scroll_top < scroll_top < navbar_height) {
+                let scroll_top = window.scrollTop
+                let scroll_amt = window.pageYOffset;
+                if (scroll_top < navbar_height) {
                     el_autohide.classList.remove('scrolled-up');
                     el_autohide.classList.remove('scrolled-down');
                     el_autohide.classList.add('is-top');
                 }
-                else if (scroll_top < last_scroll_top) {
+                else if (scroll_amt < last_scroll_amt) {
                     el_autohide.classList.remove('scrolled-down');
                     el_autohide.classList.add('scrolled-up');
                 }
@@ -47,7 +48,7 @@
                     el_autohide.classList.remove('scrolled-up');
                     el_autohide.classList.add('scrolled-down');
                 }
-                last_scroll_top = scroll_top;
+                last_scroll_amt = scroll_amt;
             }); 
         }
     }); 
