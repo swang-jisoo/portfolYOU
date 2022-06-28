@@ -42,8 +42,9 @@
                     //el_autohide.classList.add('scrolled-up');
                     el_autohide.classList.add('is-top');
                 }
-                else if (88 < scroll_amt < last_scroll_amt) {
+                else if (scroll_amt < last_scroll_amt) {
                     el_autohide.classList.remove('scrolled-down');
+                    el_autohide.classList.remove('is-top');
                     el_autohide.classList.add('scrolled-up');
                 }
                 else {
