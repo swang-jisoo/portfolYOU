@@ -3,11 +3,29 @@ html, body {
   color: #474543;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
+  font-weight: 300;
   margin: 0;
   padding: 0;
   min-height: 100%;
   position: relative;
 }
+
+// fonts //
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+// customed container //
+.inner-container {
+  padding: 1.5rem;
+  max-width: 71.25em;
+  width: 100%;
+}
+
 
 //html {
 //  padding-left: calc(100vw - 100%);
