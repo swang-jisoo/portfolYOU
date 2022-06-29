@@ -50,27 +50,26 @@
   flex-grow: 1;
   //margin: 0;
   //padding: 0;
-  //width: 100%;
   text-align: center;
+  width: 100%;
   min-height: 88px;
 }
 
 //.site-branding {
 //  margin: 13px auto 0 auto;
 //  align-items: center;
-//  text-align: center;
+//  flex-grow: 1;
 //}
 
 .navbar-brand {
   margin: 13px auto 0 auto;
   align-items: center;
-  //&::after {
-  //  margin-top: -0.25em;
-  //}
+  //flex-grow: 1;
 }
 
 .navbar-extra {
   display: flex;
+  flex-grow: 1;
   justify-content: center;
   align-items: center;
 }
