@@ -19,7 +19,8 @@
         </div>
         
         <div class="navbar-collapse collapse col-md-10" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
+          <!-- <div class="navbar-nav ml-auto"> -->
+          <div class="navbar-nav">
 
             {%- assign html_pages = site.html_pages | sort: 'weight' -%}
             {%- assign filtered_pages = "" | split: "" -%}
@@ -69,8 +70,11 @@
 
             {% endfor %}
             
-            <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+            <!-- <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span> -->
           </div> 
+          
+          <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+          
         </div>
         
       <!-- </div> -->
