@@ -50,13 +50,14 @@
   //margin: 0;
   //padding: 0;
   //width: 100%;
+  text-align: center;
   min-height: 88px;
 }
 
-.site-branding {
-  align-items: center;
-  //text-align: center;
-}
+//.site-branding {
+//  align-items: center;
+//  //text-align: center;
+//}
 
 .navbar-brand {
   margin-bottom: 0 auto 0 auto;
@@ -64,6 +65,14 @@
   //&::after {
   //  margin-top: -0.25em;
   //}
+}
+
+.navbar-collapse .to-right {
+  justify-content: flex-end;
+}
+
+.navbar-collapse .to-left {
+  justify-content: flex-start;
 }
 
 // navigation link effect //
