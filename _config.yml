@@ -56,10 +56,10 @@ nav_exclude:
   - docs/pages/404.html
   - docs/pages/index.md
   - docs/documentation/**
-  - docs/pages/blog.html
+  - docs/pages/blog.html  # split_nav
   
-split_nav:
-  - docs/pages/blog.html
+#split_nav:
+#  - docs/pages/blog.html
   
 ### Posts ###
 permalink: /blog/:title
