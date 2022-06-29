@@ -40,8 +40,10 @@
   transition: all 0.1s ease-in-out;
 }
 
-.site-header .navbar {
+.navbar {
   display: block;
+  margin: 0;
+  padding: 0;
   height: 100%;
 }
 
