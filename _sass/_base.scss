@@ -27,7 +27,7 @@ html, body, div, section, article, header, nav, footer {
   padding: 0px 1.5rem 0px 1.5rem;
   width: 100%;
   max-width: 71.25em;
-  height: 100%;
+  min-height: 88px;
 }
 
 ::selection {
