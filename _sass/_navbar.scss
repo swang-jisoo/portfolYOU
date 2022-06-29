@@ -55,13 +55,14 @@
 }
 
 //.site-branding {
+//  margin: 13px auto 0 auto;
 //  align-items: center;
-//  //text-align: center;
+//  text-align: center;
 //}
 
 .navbar-brand {
-  margin-bottom: 0 auto 0 auto;
-  margin-top: 13px;
+  margin: 13px auto 0 auto;
+  align-items: center;
   //&::after {
   //  margin-top: -0.25em;
   //}
@@ -108,4 +109,8 @@
   }
 }
 
-
+#navbarNavAltMarkup {
+  &.open{
+    order: 1;
+  }
+}
