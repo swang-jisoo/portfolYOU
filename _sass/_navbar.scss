@@ -67,12 +67,16 @@
   //}
 }
 
-.navbar-collapse .to-right {
-  justify-content: flex-end;
+.to-right {
+  margin-left: 0;
+  margin-right: auto;
+  //justify-content: flex-end;
 }
 
-.navbar-collapse .to-left {
-  justify-content: flex-start;
+.to-left {
+  margin-left: auto;
+  margin-right: 0;
+  //justify-content: flex-start;
 }
 
 // navigation link effect //
