@@ -70,12 +70,14 @@
 .to-right {
   //margin-left: 0;
   //margin-right: auto;
+  order: -1;
   justify-content: flex-end;
 }
 
 .to-left {
   //margin-left: auto;
   //margin-right: 0;
+  order: 1;
   justify-content: flex-start;
 }
 
