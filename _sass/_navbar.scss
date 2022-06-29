@@ -18,7 +18,7 @@
   }
 }
 
-// navigation scroll effect //
+// header scroll effect //
 .is-top{
   background: transparent;
   color: #fff;
@@ -40,15 +40,10 @@
   transition: all 0.1s ease-in-out;
 }
 
-.site-branding {
-  align-items: center;
-  //text-align: center;
-}
-
-// customized class //
+// navigation customized class //
 .navbar {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: stretch;
   flex-shrink: 0;
@@ -58,12 +53,9 @@
   min-height: 88px;
 }
 
-// navigation link effect //
-.link-after {
-  content: "";
-  display: block;
-  height: 0.15em;
-  background: $primary;
+.site-branding {
+  align-items: center;
+  //text-align: center;
 }
 
 .navbar-brand {
@@ -72,6 +64,14 @@
   //&::after {
   //  margin-top: -0.25em;
   //}
+}
+
+// navigation link effect //
+.link-after {
+  content: "";
+  display: block;
+  height: 0.15em;
+  background: $primary;
 }
 
 .nav-link, .navbar-brand {
