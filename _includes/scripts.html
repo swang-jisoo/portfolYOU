@@ -21,7 +21,7 @@
     })
 </script>
 
-<!-- navbar -->
+<!-- header navigation scroll effect -->
 <script>
     document.addEventListener("DOMContentLoaded", function(){
         el_autohide = document.querySelector('.autohide');
@@ -53,6 +53,15 @@
             }); 
         }
     }); 
+</script>
+
+<!-- header navigation button effect -->
+<script>
+    $(".navbar-toggler").on("click", function(){
+        $(this).toggleClass("active");
+        $("#navbarNavAltMarkup").toggleClass("open");
+        //$(".content").toggleClass("shift");
+    })
 </script>
 
 <!-- landing -->
