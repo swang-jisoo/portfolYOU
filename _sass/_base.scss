@@ -30,6 +30,13 @@ html, body, div, section, article, header, nav, footer {
   min-height: 88px;
 }
 
+.row {
+  margin: 0 auto 0 auto;
+  padding: 0px 1.5rem 0px 1.5rem;
+  width: 100%;
+  min-height: 88px;
+}
+
 ::selection {
     background-color: #4cd8b0;
     color: #fff;
