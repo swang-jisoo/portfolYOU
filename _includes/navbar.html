@@ -76,26 +76,14 @@
       
         <div class="navbar-collapse collapse col-12 col-md-3" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            
-            {%- assign html_page = site.split_nav -%}
-            
-            {%- if page.url contains html_page.url -%}
+                        
+            {%- if page.url contains '/blog/' -%}
               {%- assign active_status = "active" -%}
             {%- else -%}
               {%- assign active_status = "" -%}
             {%- endif -%}
-
-            {%- if html_page.external_url -%}
-              {%- assign url = html_page.external_url -%}
-            {%- else -%}
-              {%- assign url = html_page.url | relative_url -%}
-            {%- endif -%}
             
-            <a class="nav-item nav-link {{ active_status }}" 
-               href="{{ url }}" {%- if html_page.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}
-               >
-              {{ html_page.title }}
-            </a>
+            <a class="nav-item nav-link {{ active_status }}" href="/blog/">Blog</a>
             
             <!-- <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span> -->
             
