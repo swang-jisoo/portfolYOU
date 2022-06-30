@@ -57,6 +57,12 @@
 
 <!-- header navigation button effect -->
 <script>
+    function() {
+      var x = document.getElementById("myDIV");
+      if (window.getComputedStyle(x).display === "none") {
+        // Do something..
+      }
+    }
     $(".navbar-toggler").on("click", function(){
         $(this).toggleClass("active");
         $("#navbarNavAltMarkup").toggleClass("open");
