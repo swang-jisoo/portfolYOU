@@ -14,7 +14,7 @@ open_new_tab        : false
 greeting: 
   enable            : true                                  # enable _include/landing.html
   before_navbar     : false
-  type              : responsive_center_img                 # responsive_center_img, static_left_img, cloud, globe
+  type              : globe                 # responsive_center_img, static_left_img, cloud, globe
 
 
 ### Author Info ###
