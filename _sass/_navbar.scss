@@ -1,3 +1,4 @@
+/*
 .site-header {
   background: transparent;
   color: #fff;
@@ -97,6 +98,14 @@
   background: $primary;
 }
 
+.nav-item .active {
+  font-weight: 400;
+  &::after {
+    @extend .link-after;
+    width: 100% !important;
+  }
+}
+
 .nav-link, .navbar-brand {
   &::after {
     @extend .link-after;
@@ -107,12 +116,22 @@
     width: 100%;
   }
 }
+*/
 
-.nav-item .active {
-  font-weight: 400;
+.nav_link {
+  color: #000;
+  display: inline-block;
+  line-height: 22px;
+  white-space: nowrap;
+  opacity: .88; 
+  
+  &:hover::after {
+    color: $primary;
+  }
+  
   &::after {
-    @extend .link-after;
-    width: 100% !important;
+    opacity: .56;
+    //transition: all 0s;
   }
 }
 
