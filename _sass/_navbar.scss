@@ -120,7 +120,7 @@
   }
 }
 
-/*@media only screen and (max-width: 1044px){
+@media only screen and (max-width: 1044px){
   .site-header {
     min-width: 320px;
   } 
@@ -130,6 +130,11 @@
   .site-header {
     height: 48px;
   }
-font-size: 19px;
-}*/
+  .nav-title, .nav-menu {
+    line-height: 48px;
+  }
+  .nav-title-link {
+    font-size: 19px;
+  }
+}
 
