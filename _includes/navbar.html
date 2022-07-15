@@ -1,44 +1,29 @@
-<!-- ## <header class="site-header autohide" role="banner"> -->
+<!-- sticky blurred right-title left-menu navigation -->
 <nav class="site-nav">
-  <!-- <div class="wrapper"> -->
-    <!-- <div class="nav-background"></div> -->
-  
-    <!-- ## <div class="inner-container"> -->
-    <div class="nav-content">
-    <!-- <nav class="navbar navbar-expand-lg navbar-themed"> -->
-    <!-- ## <nav class="navbar navbar-expand-lg"> -->
-    <!-- <nav class="site-header-nav"> -->
-      <!-- <div class="row"> -->
+  <div class="nav-content">
         
-        <!-- <div class="site-branding col-6 col-lg-4"> -->
-        <span class="nav-title">
-          <!-- <a class="navbar-brand" href="{{ site.baseurl }}/"> -->
-          <a class="nav-title-link" href="{{ site.baseurl }}/">
-            <!-- <h4><b> -->
-              {{ site.title }}
-            <!-- </b></h4> -->
-          </a>
-        </span>
-        <!-- </div> -->
+    <span class="nav-title">
+      <a class="nav-title-link" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    </span>
       
-        <!-- <button class="navbar-toggler col-6 col-lg-4" type="button" 
-                data-toggle="collapse" 
-                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
-                aria-expanded="false" aria-label="Toggle navigation"
-                > -->
-        <!-- ## <button class="navbar-toggler" type="button" 
-                data-toggle="collapse" 
-                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
-                aria-expanded="false" aria-label="Toggle navigation"
-                >
-          <i class="fas fa-1x fa-bars text-themed"></i>
-        </button> -->
+    <!-- <button class="navbar-toggler col-6 col-lg-4" type="button" 
+            data-toggle="collapse" 
+            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
+            aria-expanded="false" aria-label="Toggle navigation"
+            > -->
+    <!-- ## <button class="navbar-toggler" type="button" 
+            data-toggle="collapse" 
+            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
+            aria-expanded="false" aria-label="Toggle navigation"
+            >
+      <i class="fas fa-1x fa-bars text-themed"></i>
+    </button> -->
       
       
         
-        <!-- <div class="navbar-collapse collapse to-right col-12 col-lg-4" id="navbarNavAltMarkup"> -->
-        <!-- ## <div class="navbar-collapse collapse" id="navbarNavAltMarkup"> -->
-        <div class="nav-menu">
+    <!-- <div class="navbar-collapse collapse to-right col-12 col-lg-4" id="navbarNavAltMarkup"> -->
+    <!-- ## <div class="navbar-collapse collapse" id="navbarNavAltMarkup"> -->
+    <div class="nav-menu">
           <!-- ## <div class="navbar-nav ml-auto"> -->
           <!-- <div class="navbar-nav"> --> 
 
@@ -92,30 +77,7 @@
             
             <span id="theme-toggler" class="nav-menu-link" role="button" onclick="toggleTheme()"></span>
             
-          <!-- </div> -->           
-        </div>
-      
-        <!-- <div class="navbar-collapse collapse col-12 col-lg-3" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-                        
-            {%- if page.url contains '/blog/' -%}
-              {%- assign active_status = "active" -%}
-            {%- else -%}
-              {%- assign active_status = "" -%}
-            {%- endif -%}
-            
-            <a class="nav-item nav-link {{ active_status }}" href="/blog/">Blog</a>
-            
-          </div>
-        </div> -->
-        
-        <!-- <div class="navbar-extra to-left col col-lg-1">
-          <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
-        </div> -->
-      
-      <!-- </div> --> 
-    <!-- </nav> -->
     </div>
-  <!-- </div> -->
+
+  </div>
 </nav>
-<!-- </header> -->
