@@ -29,7 +29,7 @@ html, body, div, section, article, header, nav, footer {
   //padding-right: max(22px,env(safe-area-inset-right));
   //padding-bottom: 0px;
   //padding-left: max(22px,env(safe-area-inset-left));
-  width: 980px; //100%;
+  max-width: 980px; //100%;
   //max-width: 71.25em;
   min-height: 88px;
 }
