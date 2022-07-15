@@ -2,8 +2,14 @@
   <div class="inner-container"> 
     <!-- <nav class="navbar navbar-expand-lg navbar-themed"> -->
     <nav class="navbar navbar-expand-lg">
-      <div class="row">
+      <!-- <div class="row"> -->
         
+        <!-- <div class="site-branding col-6 col-lg-4"> -->
+        <a class="navbar-brand" href="{{ site.baseurl }}/">
+          <h4><b>{{ site.title }}</b></h4>
+        </a>
+        <!-- </div> -->
+      
         <button class="navbar-toggler col-6 col-lg-4" type="button" 
                 data-toggle="collapse" 
                 data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
@@ -12,11 +18,7 @@
           <i class="fas fa-1x fa-bars text-themed"></i>
         </button>
       
-        <div class="site-branding col-6 col-lg-4">
-          <a class="navbar-brand" href="{{ site.baseurl }}/">
-            <h4><b>{{ site.title }}</b></h4>
-          </a>
-        </div>
+      
         
         <div class="navbar-collapse collapse to-right col-12 col-lg-4" id="navbarNavAltMarkup">
           <!-- <div class="navbar-nav ml-auto"> -->
@@ -70,11 +72,12 @@
 
             {% endfor %}
             
-            <!-- <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span> -->
+            <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+            
           </div>           
         </div>
       
-        <div class="navbar-collapse collapse col-12 col-lg-3" id="navbarNavAltMarkup">
+        <!-- <div class="navbar-collapse collapse col-12 col-lg-3" id="navbarNavAltMarkup">
           <div class="navbar-nav">
                         
             {%- if page.url contains '/blog/' -%}
@@ -85,16 +88,14 @@
             
             <a class="nav-item nav-link {{ active_status }}" href="/blog/">Blog</a>
             
-            <!-- <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span> -->
-            
           </div>
-        </div>
+        </div> -->
         
-        <div class="navbar-extra to-left col col-lg-1">
+        <!-- <div class="navbar-extra to-left col col-lg-1">
           <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
-        </div>
+        </div> -->
       
-      </div>
+      <!-- </div> --> 
     </nav>
   </div>
 </header>
