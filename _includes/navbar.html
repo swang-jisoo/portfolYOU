@@ -13,7 +13,7 @@
         <!-- <div class="site-branding col-6 col-lg-4"> -->
         <span class="nav-title">
           <!-- <a class="navbar-brand" href="{{ site.baseurl }}/"> -->
-          <a href="{{ site.baseurl }}/">
+          <a class="nav-title-link" href="{{ site.baseurl }}/">
             <!-- <h4><b> -->
               {{ site.title }}
             <!-- </b></h4> -->
@@ -82,7 +82,7 @@
                 {%- assign url = html_page.url | relative_url -%}
               {%- endif -%}
 
-              <a class="nav-item nav-link {{ active_status }}" 
+              <a class="nav-item nav-menu-link {{ active_status }}" 
                  href="{{ url }}" {%- if html_page.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}
                  >
                 {{ html_page.title }}
