@@ -108,8 +108,9 @@
 //  text-decoration: none;
 //}
 
-.nav-menu-link .active {
+.nav-menu-link.active {
   color: #666666;
+  font-weight: 500;
   text-decoration: none;
   //cursor: default;
 }
