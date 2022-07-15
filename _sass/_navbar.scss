@@ -118,7 +118,7 @@
 }
 */
 
-.nav_link {
+.nav-link {
   color: #000;
   display: inline-block;
   line-height: 22px;
@@ -135,8 +135,8 @@
   }
 }
 
-//#navbarNavAltMarkup {
-//  &.open{
-//    order: 1;
-//  }
-//}
+#navbarNavAltMarkup {
+  &.open{
+    order: 1;
+  }
+}
