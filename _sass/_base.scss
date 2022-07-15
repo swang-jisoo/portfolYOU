@@ -24,9 +24,13 @@ html, body, div, section, article, header, nav, footer {
 
 .inner-container {
   margin: 0 auto 0 auto;
-  padding: 0px 1.5rem 0px 1.5rem;
-  width: 100%;
-  max-width: 71.25em;
+  padding: 0px 22px 0px 22px;
+  //padding-top: 0px;
+  //padding-right: max(22px,env(safe-area-inset-right));
+  //padding-bottom: 0px;
+  //padding-left: max(22px,env(safe-area-inset-left));
+  width: 980px; //100%;
+  //max-width: 71.25em;
   min-height: 88px;
 }
 
