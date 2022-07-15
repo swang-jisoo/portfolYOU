@@ -30,10 +30,15 @@ html, body, div, section, article, header, nav, footer {
   min-height: 88px;
 }
 
-//.row {
-//  width: 100%;
-//  min-height: 88px;
-//}
+.row {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  //width: 100%;
+  //min-height: 88px;
+}
 
 //.middle-xs {
 //  align-items: center;
