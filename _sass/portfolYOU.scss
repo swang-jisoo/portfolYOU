@@ -4,18 +4,18 @@
 // @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import //"variables",
+@import "variables",
         "404",
         "base",
-        //"blog",
+        "blog",
         "footer",
-        //"landing",
+        "landing",
         "navbar",
         "markdown",
         "projects",
         "timeline_bold",
         "timeline_light",
-        //"autumn",
-        //"theme",
-        //"theme-dark"
+        "autumn",
+        "theme",
+        "theme-dark"
         ;
