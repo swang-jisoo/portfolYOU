@@ -17,7 +17,7 @@ permalink: /
 <section class="section section-news">
   <div class="section-content">
     <h2 class="section-news-headline text-center">Recent News</h2>
-    {% include about/timeline_light.html title="Recent News" source=site.data.news %}
+    {% include about/timeline_light.html source=site.data.news %}
   </div>
 </section>
 
