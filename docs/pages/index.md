@@ -1,23 +1,7 @@
 ---
-layout: page
+layout: home
 permalink: /
 ---
 
-<section class="section site-header">
-  <!-- {% include landing.html %} -->
-  <div class="section-content">
-    <h1 class="site-header-headline text-center"> 
-      Hi, I am {{ site.author.name }}.
-      <br>
-      {{ site.author.description }} 
-    </h1>
-  </div>
-</section>
 
-<section class="section section-news">
-  <div class="section-content">
-    <h2 class="section-news-headline text-center">Recent News</h2>
-    {% include about/timeline_light.html source=site.data.news %}
-  </div>
-</section>
 
