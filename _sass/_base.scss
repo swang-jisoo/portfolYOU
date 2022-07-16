@@ -1,4 +1,4 @@
-html, body, div, section, article, header, nav, footer {
+/*html, body, div, section, article, header, nav, footer {
   //background: #fcf8ee;
   //color: #474543;
   font-family: 'Roboto', sans-serif; //'Montserrat', sans-serif; 
@@ -12,6 +12,21 @@ html, body, div, section, article, header, nav, footer {
   //vertical-align: baseline;
   //position: relative;
   //cursor: auto;
+}*/
+
+body {
+  min-width: 320px;
+  line-height: 1.47;
+  margin: 0;
+  padding: 0;
+  
+  background-color: #fcf8ed;
+  color: #161616;
+  font-family: 'Roboto', sans-serif; //'Montserrat', sans-serif; 
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.022em;
 }
 
 // customized container //
