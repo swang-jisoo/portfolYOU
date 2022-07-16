@@ -1,7 +1,6 @@
 ### Site Settings ###
 title               : JISOO LEE
-description         : >-
-                      I turn coffee :coffee: into code.
+#description         : I am a Machine Learning researcher. 
 url                 : "https://swang-jisoo.github.io"
 baseurl             : "/"                                   
 repository          : swang-jisoo/swang-jisoo.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
@@ -20,6 +19,7 @@ greeting:
 ### Author Info ###
 author:
   name              : Jisoo Lee
+  description       : I am a Machine Learning researcher. 
   image             : assets/images/id.png
 #  behance           : your_username
 #  dribbble          : your_username
