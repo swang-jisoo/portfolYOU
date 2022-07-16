@@ -1,0 +1,21 @@
+<div class="col-lg">
+  <h4 class="mb-4">{{ include.title }}</h4>
+
+  <div class="tiemline-body">
+    {% for item in include.source %}
+      <div class="timeline-item">
+        {% if item.from and item.to %}
+          <small class="date">{{ item.from }} — {{ item.to }}</small>
+        {% elsif item.date %}
+          <small class="date">{{ item.date }}</small>
+        {% endif %}
+        
+        <h4>{{ item.title }}</h4>
+
+        {% if item.description %}
+          <p>{{ item.description }}</p>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
