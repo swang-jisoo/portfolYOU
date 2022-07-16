@@ -3,9 +3,20 @@ layout: page
 permalink: /
 ---
 
-<header>
-  {% include landing.html %}
+<header class="section site-header text-center">
+  <!-- {% include landing.html %} -->
+  <div class="section-content">
+    <div class="site-header-text">
+      <h1> 
+        Hi, I am {{ site.author.name }}.
+        <br>
+        {{ site.author.description }} 
+      </h1>
+    </div>
+  </div>
 </header>
-<div class>
+
+<section>
   {% include about/timeline_light.html title="Recent News" source=site.data.news %}
-</div>
+</section>
+
