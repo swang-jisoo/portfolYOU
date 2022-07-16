@@ -3,7 +3,7 @@ layout: page
 permalink: /
 ---
 
-<header class="section site-header text-center">
+<section class="section site-header text-center">
   <!-- {% include landing.html %} -->
   <div class="section-content">
     <div class="site-header-text">
@@ -14,7 +14,7 @@ permalink: /
       </h1>
     </div>
   </div>
-</header>
+</section>
 
 
 
