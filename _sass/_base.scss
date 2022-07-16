@@ -68,13 +68,13 @@ body {
   margin-bottom: 25px;
 }
 
-.site-header-text {
+.site-header .site-header-text {
   z-index: 2;
   position: absolute;
   top: calc(50% + 44px);
   transform: translateY(-50%);
   width: 100%; 
-  min-height: 100vh; //168px;
+  min-height: 168px; //100vh;
 }
 
 .local-header {
