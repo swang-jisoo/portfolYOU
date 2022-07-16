@@ -14,5 +14,7 @@ permalink: /
   </div>
 </section>
 
-
+<section class="section">
+  {% include about/timeline_light.html title="Recent News" source=site.data.news %}
+</section>
 
