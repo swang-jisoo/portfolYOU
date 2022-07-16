@@ -3,10 +3,10 @@ layout: page
 permalink: /
 ---
 
-<section class="section site-header text-center">
+<section class="section site-header">
   <!-- {% include landing.html %} -->
   <div class="section-content">
-    <h1 class="site-header-headline"> 
+    <h1 class="site-header-headline text-center"> 
       Hi, I am {{ site.author.name }}.
       <br>
       {{ site.author.description }} 
