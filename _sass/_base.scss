@@ -21,8 +21,8 @@ body {
   margin: 0;
   padding: 0;
   
-  background-color: #fcf8ed;
-  color: #161616;
+  background-color: #f2e6d0;
+  color: #262521;
   font-family: 'Roboto', sans-serif; //'Montserrat', sans-serif; 
   font-style: normal;
   font-size: 17px;
@@ -31,8 +31,8 @@ body {
 }
 
 ::selection {
-  background-color: #195645;
-  color: #fcf8ed;
+  background-color: #234661;
+  color: #f2e6d0;
 }
 
 // class //
@@ -69,11 +69,11 @@ body {
   padding-bottom: 217px;
 }
 
-.local-header {
+.local-header, .section-news {
   position: relative;
   overflow: hidden;
-  padding-top: 100px;
-  padding-bottom: 117px;
+  padding-top: 91px;
+  padding-bottom: 65px;
 }
 
 @media only screen and (max-width: 1068px) {
@@ -81,9 +81,9 @@ body {
     padding-top: 143px;
     padding-bottom: 134px;
   }
-  .local-header {
-    padding-top: 72px;
-    padding-bottom: 67px;
+  .local-header, .section-news {
+    padding-top: 65px;
+    padding-bottom: 40px;
   }
 }
 
@@ -92,15 +92,30 @@ body {
     padding-top: 135px;
     padding-bottom: 118px;
   }
-  .local-header {
-    padding-top: 67px;
-    padding-bottom: 59px;
+  .local-header, .section-news {
+    padding-top: 58px;
+    padding-bottom: 30px;
   }
 }
 
 // design //
 .text-center {
   text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.site-header-text {
+  line-height: 1.05;
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: -.015em;
 }
 
 
