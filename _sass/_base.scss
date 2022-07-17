@@ -187,6 +187,29 @@ body {
   letter-spacing: -.003em;
 }
 
+.image-prof-container {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  background: linear-gradient(to bottom, #262521 0%, #4E4C44 100%);
+}
+
+.image-prof {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: auto;
+  margin-right: auto;
+  width: 936px;
+  background-position: 381px 100%;
+}
+
 @media only screen and (max-width: 1068px) {
   .site-header-title-1 {
     line-height: 1.25;
