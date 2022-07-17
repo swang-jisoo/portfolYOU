@@ -57,6 +57,7 @@ nav_exclude:
   - docs/pages/index.md
   - docs/documentation/**
   #- docs/pages/blog.html  # split_nav
+  - docs/pages/more.html
   
 #split_nav:
 #  - docs/pages/blog.html
