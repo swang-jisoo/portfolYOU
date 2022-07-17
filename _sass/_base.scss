@@ -206,18 +206,18 @@ body {
   left: 0;
   overflow: hidden;
   width: 100%;
-  background: linear-gradient(to bottom, #262521 0%, #4E4C44 100%);
+  background: linear-gradient(to bottom, #262521 0%, #4E4C44 30%, #F2E6D0 100%);
 }
 
 .image-prof {
   z-index: 1;
   position: absolute;
   bottom: 0;
-  left: 50%;
+  //left: 50%;
   transform: translateX(-50%);
-  margin: 0 auto;
-  width: 300px;
-  height: 321px;
+  //margin: 0 auto;
+  width: 321px;
+  height: 300px;
   //background-position: 381px 100%;
   //background-size: 489px 336px;
   //background-repeat: no-repeat;
