@@ -13,25 +13,24 @@ layout: default
 
 <section class="section-height">
   <div class="section-width">
-    <h2 class="section-title-2 text-center"> Skills </h2>
-    <div class="row">
-        {% include about/skills.html title="Programming" source=site.data.programming-skills %}
-        {% include about/skills.html title="Cloud Platform" source=site.data.other-skills %}
-    </div>
-  </div>
-</section>
-
-<section class="section-height">
-  <div class="section-width">
-    <h2 class="section-title-2 text-center"> Experience </h2>
-    <div class="container-col2">
-      <div class="container-col2-bg">
+    <h2 class="section-title-2 text-center"> Brief Bio </h2>
+    
+    <div class="row-col2">
+      <div class="container-bg">
         {% include about/timeline_light.html title="Work & Research" source=site.data.experience %}
       </div>
-      <div class="container-col2-bg">
+      <div class="container-bg">
         {% include about/timeline_light.html title="Education" source=site.data.education %}
       </div>
     </div>
+    
+    <div class="row">
+      <div class="container-bg">
+        {% include about/skills.html title="Programming" source=site.data.programming-skills %}
+        {% include about/skills.html title="Cloud Platform" source=site.data.other-skills %}
+      </div>
+    </div>
+    
   </div>
 </section>
 
