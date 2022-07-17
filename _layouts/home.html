@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<section class="section site-header">
+<section class="site-header-height">
   <!-- {% include landing.html %} -->
-  <div class="section-content">
-    <h1 class="site-header-headline text-center"> 
+  <div class="section-width">
+    <h1 class="site-header-title-1 text-center"> 
       Hi, I am {{ site.author.name }}.
       <br>
       {{ site.author.description }} 
@@ -13,9 +13,9 @@ layout: default
   </div>
 </section>
 
-<section class="section section-header">
-  <div class="section-content">
-    <h2 class="section-header-headline text-center">Recent News</h2>
+<section class="section-height">
+  <div class="section-width">
+    <h2 class="section-title-2 text-center">Recent News</h2>
     {% include about/timeline_light.html source=site.data.news %}
   </div>
 </section>
