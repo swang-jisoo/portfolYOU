@@ -77,6 +77,14 @@ body {
   min-width: 0px;
 }*/
 
+.container-col2 {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  grid-gap: 24px;
+  margin: 24px 0;
+}
+
 .container-col2-bg {
   position: relative;
   overflow: hidden;
@@ -87,7 +95,6 @@ body {
   background: #D4CFBE; //var(--panel-color);
   border-radius: 20px;
 }
-
 
 @media only screen and (max-width: 1068px) {
   .site-header-height {
@@ -106,6 +113,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 692px;
+  }
+  .container-col2-bg {
+    padding: 45px 28px 44px;
   }
 }
 
@@ -126,6 +136,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 87.5%;
+  }
+  .container-col2-bg {
+    padding: 35px 36px 34px;
   }
 }
 
