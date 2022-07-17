@@ -15,12 +15,8 @@ layout: default
   <div class="section-width">
     <h2 class="section-title-2 text-center"> Skills </h2>
     <div class="row">
-      <div class="container-col2-bg">
         {% include about/skills.html title="Programming" source=site.data.programming-skills %}
-      </div>
-      <div class="container-col2-bg">
         {% include about/skills.html title="Cloud Platform" source=site.data.other-skills %}
-      </div>
     </div>
   </div>
 </section>
@@ -28,9 +24,13 @@ layout: default
 <section class="section-height">
   <div class="section-width">
     <h2 class="section-title-2 text-center"> Experience </h2>
-    <div class="row">
-      {% include about/timeline_light.html title="Work & Research" source=site.data.experience %}
-      {% include about/timeline_light.html title="Education" source=site.data.education %}
+    <div class="container-col2">
+      <div class="container-col2-bg">
+        {% include about/timeline_light.html title="Work & Research" source=site.data.experience %}
+      </div>
+      <div class="container-col2-bg">
+        {% include about/timeline_light.html title="Education" source=site.data.education %}
+      </div>
     </div>
   </div>
 </section>
