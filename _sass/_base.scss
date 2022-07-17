@@ -158,7 +158,7 @@ body {
   color: #F2E6D0;
 }
 
-.text-center {
+/*.text-center {
   text-align: center;
 }
 
@@ -168,7 +168,7 @@ body {
 
 .text-right {
   text-align: right;
-}
+}*/
 
 .site-header-title-1 {
   line-height: 1.25;
@@ -206,16 +206,16 @@ body {
   left: 0;
   overflow: hidden;
   width: 100%;
-  background: linear-gradient(to bottom, #262521 0%, #4E4C44 30%, #F2E6D0 100%);
+  background: linear-gradient(to bottom, #262521 0%, #4E4C44 50%, #F2E6D0 100%);
 }
 
 .image-prof {
   z-index: 1;
   position: absolute;
-  bottom: 0;
-  //left: 50%;
-  transform: translateX(-50%);
-  //margin: 0 auto;
+  bottom: 10px;
+  left: 50%;
+  //transform: translateX(-50%);
+  margin: 0 auto;
   width: 321px;
   height: 300px;
   //background-position: 381px 100%;
