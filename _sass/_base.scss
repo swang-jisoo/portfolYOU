@@ -86,11 +86,18 @@ body {
   margin: 24px 0;
 }
 
-.container-bg {
-  position: relative;
+.container-col1-bg {
   overflow: hidden;
+  padding: 62px 40px 66px;  
+  background: #D4CFBE; //var(--panel-color);
+  border-radius: 20px;
+}
+
+.container-col2-bg {
+  position: relative;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   padding: 43px 50px 64px;
   justify-content: space-between;
   background: #D4CFBE; //var(--panel-color);
