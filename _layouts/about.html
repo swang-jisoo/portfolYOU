@@ -4,12 +4,10 @@ layout: default
 
 <section class="local-header-height">
   <div class="section-width">
-    <h1 class="local-header-title-1 text-left"> {{ site.author.name }} </h1>
     <div class="image-prof-container">
-      <figure class="image-prof">
-        <img src="{{ site.author.image }}" alt="{{ site.title }}">
-      </figure>
+      <img class="image-prof" src="{{ site.author.image }}" alt="{{ site.title }}">
     </div>
+    <h1 class="local-header-title-1 text-left text-white"> {{ site.author.name }} </h1>
     <div class="social"> 
       {% include social.html %}
     </div>
