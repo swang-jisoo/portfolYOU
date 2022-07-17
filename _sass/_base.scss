@@ -207,14 +207,14 @@ body {
   overflow: hidden;
   width: 100%;
   //background: linear-gradient(to bottom, #262521 0%, #4E4C44 50%, #F2E6D0 100%);
-  background: linear-gradient(to bottom, #061520 0%, #234661 60%, #35658A 30%, #F2E6D0 100%);
+  background: linear-gradient(to bottom, #061520, #234661, #35658A, #F2E6D0);
 }
 
 .image-prof {
   z-index: 1;
   position: absolute;
   bottom: 10px;
-  left: 50%;
+  left: 40%;
   //transform: translateX(-50%);
   margin: 0 auto;
   width: 321px;
