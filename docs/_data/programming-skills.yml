@@ -1,11 +1,11 @@
-- name: HTML5/CSS3
+- name: Python (Tensorflow, PyTorch, OpenCV)
   percentage: 90
   color: danger
 
-- name: Go
+- name: R
   percentage: 80
   color:
 
-- name: Python
-  percentage: 70
+- name: SQL
+  percentage: 60
   color: secondary
