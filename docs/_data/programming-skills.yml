@@ -6,6 +6,19 @@
   percentage: 80
   color:
 
+- name: Java
+  percentage: 70
+  color:
+  
 - name: SQL
   percentage: 60
   color: secondary
+  
+- name: AWS
+  percentage: 70
+  color:
+  
+- name: Azure
+  percentage: 60
+  color:
+  
