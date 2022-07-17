@@ -70,6 +70,13 @@ body {
   width: 100%;
 }
 
+.column {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-width: 0px;
+}
+
 @media only screen and (max-width: 1068px) {
   .site-header-height {
     padding-top: 143px;
