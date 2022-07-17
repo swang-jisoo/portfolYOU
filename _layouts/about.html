@@ -3,15 +3,31 @@ layout: default
 ---
 
 <section class="section local-header">
-  <!-- {% include landing.html %} -->
   <div class="section-content">
-    <h1 class="local-header-headline text-left"> {{ site.author.name }} </h1>
+    <h1 class="section-header-headline text-left"> {{ site.author.name }} </h1>
     <div class="social"> </div>
   </div>
 </section>
 
-<section class="section section-about">
+<section class="section section-header">
   <div class="section-content">
-    {{ content }}
+    <h1 class="section-header-headline text-center"> Skills </h1>
+    {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
+    {% include about/skills.html title="Other Skills" source=site.data.other-skills %}
+  </div>
+</section>
+
+<section class="section section-header">
+  <div class="section-content">
+    <h1 class="section-header-headline text-center"> Work Experience </h1>
+    {% include about/timeline_light.html source=site.data.experience %}
+  </div>
+</section>
+
+
+<section class="section section-header">
+  <div class="section-content">
+    <h1 class="section-header-headline text-center"> Education </h1>
+    {% include about/timeline_light.html source=site.data.education %}
   </div>
 </section>
