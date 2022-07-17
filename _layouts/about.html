@@ -15,9 +15,13 @@ layout: default
   <div class="section-width">
     <h2 class="section-title-2 text-center"> Skills </h2>
     <div class="row">
-      {% include about/skills.html title="Programming" source=site.data.programming-skills %}
-      {% include about/skills.html title="Cloud Platform" source=site.data.other-skills %}
-    </dv>
+      <div class="container-col2-bg">
+        {% include about/skills.html title="Programming" source=site.data.programming-skills %}
+      </div>
+      <div class="container-col2-bg">
+        {% include about/skills.html title="Cloud Platform" source=site.data.other-skills %}
+      </div>
+    </div>
   </div>
 </section>
 
