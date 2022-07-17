@@ -178,7 +178,6 @@ body {
 }
 
 .local-header-title-1 {
-  z-index: 1;
   line-height: 1.25;
   font-size: 56px;
   font-weight: 500;
@@ -190,6 +189,13 @@ body {
   font-size: 48px;
   font-weight: 500;
   letter-spacing: -.003em;
+}
+
+.text-prof-contatiner {
+  z-index: 1;
+  position: relative;
+  padding-top: 94px;
+  width: 50%;
 }
 
 .image-prof-container {
@@ -211,7 +217,10 @@ body {
   transform: translateX(-50%);
   margin: 0 auto;
   width: 936px;
+  height: 336px;
   background-position: 381px 100%;
+  background-size: 489px 336px;
+  background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 1068px) {
