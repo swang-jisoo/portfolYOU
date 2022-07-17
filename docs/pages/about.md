@@ -2,7 +2,7 @@
 layout: about
 title: Resume
 permalink: /resume/
-weight: 1
+weight: 2
 ---
 
 <div class="row">
