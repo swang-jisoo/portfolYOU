@@ -12,22 +12,16 @@ layout: default
 <section class="section section-header">
   <div class="section-content">
     <h1 class="section-header-headline text-center"> Skills </h1>
-    {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
-    {% include about/skills.html title="Other Skills" source=site.data.other-skills %}
+    {% include about/skills.html title="Programming" source=site.data.programming-skills %}
+    {% include about/skills.html title="Cloud Platform" source=site.data.other-skills %}
+    <!-- {% include about/skills_light.html title="ML Algorithms" source=site.data.algorithms %} -->
   </div>
 </section>
 
 <section class="section section-header">
   <div class="section-content">
-    <h1 class="section-header-headline text-center"> Work Experience </h1>
-    {% include about/timeline_light.html source=site.data.experience %}
-  </div>
-</section>
-
-
-<section class="section section-header">
-  <div class="section-content">
-    <h1 class="section-header-headline text-center"> Education </h1>
-    {% include about/timeline_light.html source=site.data.education %}
+    <h1 class="section-header-headline text-center"> Experience </h1>
+    {% include about/timeline_light.html title="Work & Research" source=site.data.experience %}
+    {% include about/timeline_light.html title="Education" source=site.data.education %}
   </div>
 </section>
