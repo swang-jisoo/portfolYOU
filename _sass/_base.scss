@@ -214,7 +214,7 @@ body {
 .image-prof {
   z-index: 1;
   position: absolute;
-  bottom: 10px;
+  bottom: 0; //10px;
   left: 53%;
   //transform: translateX(-50%);
   margin: 0 auto;
