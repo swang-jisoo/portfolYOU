@@ -4,5 +4,5 @@ permalink: /
 ---
 
 {% include home/index.html headline="Hi, I am Jisoo Lee." description="I am a ML researcher."%}
-{% include home/news.html source=site.data.news %}
+{% include home/news.html %}
 
