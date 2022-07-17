@@ -69,7 +69,7 @@ body {
   padding-bottom: 217px;
 }
 
-.local-header, .section-news {
+.local-header, .section-header {
   position: relative;
   overflow: hidden;
   padding-top: 91px;
@@ -81,7 +81,7 @@ body {
     padding-top: 143px;
     padding-bottom: 134px;
   }
-  .local-header, .section-news {
+  .local-header, .section-header {
     padding-top: 65px;
     padding-bottom: 40px;
   }
@@ -92,7 +92,7 @@ body {
     padding-top: 135px;
     padding-bottom: 118px;
   }
-  .local-header, .section-news {
+  .local-header, .section-header {
     padding-top: 58px;
     padding-bottom: 30px;
   }
@@ -118,7 +118,7 @@ body {
   letter-spacing: -.015em;
 }
 
-.section-news-headline {
+.section-header-headline {
   line-height: 1.08349;
   font-size: 48px;
   font-weight: 600;
@@ -132,7 +132,7 @@ body {
     font-weight: 600;
     letter-spacing: -.005em;
   }
-  .section-news-headline {
+  .section-header-headline {
     line-height: 1.1;
     font-size: 40px;
     font-weight: 600;
@@ -147,7 +147,7 @@ body {
     font-weight: 600;
     letter-spacing: -.003em;
   }
-  .section-news-headline {
+  .section-header-headline {
     line-height: 1.125;
     font-size: 32px;
     font-weight: 600;
