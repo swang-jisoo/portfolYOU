@@ -1,11 +1,3 @@
-$color-0-bg: #F2E6D0; //bg, txt-light
-$color-1: #D4CFBE; 
-$color-2: #737066;
-$color-3: #4E4C44;
-$color-4-txt: #262521; //txt-dark
-$color-5: #0B0A08; 
-$color-hl-light: #6FDBA9;
-$color-hl-dark: #26543F;
 
 // sticky blurred right-title left-menu navigation
 .site-nav {
@@ -38,7 +30,7 @@ $color-hl-dark: #26543F;
 }
 
 .nav-title-link {
-  color: $color-0-txt; 
+  color: $color-4-txt; 
   font-size: 21px;
   font-weight: 500;
   
@@ -59,7 +51,7 @@ $color-hl-dark: #26543F;
   padding: 0;
   line-height: 22px;
   
-  color: $color-0-txt; 
+  color: $color-4-txt; 
   opacity: .88;
   font-size: 12px;
   font-weight: 400;
@@ -76,7 +68,7 @@ $color-hl-dark: #26543F;
 }
 
 .nav-menu-link.active {
-  color: $color-0-txt; 
+  color: $color-4-txt; 
   opacity: .56;
   //font-weight: 500;
   text-decoration: none;
