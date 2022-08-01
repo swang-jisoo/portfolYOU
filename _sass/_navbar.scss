@@ -29,12 +29,12 @@
 }
 
 .nav-title-link {
-  color: #262521; 
+  color: $color-0-txt; 
   font-size: 21px;
   font-weight: 500;
   
   &:hover {
-    color: #5FAFEB;
+    color: $color-hl-light;
     text-decoration: none;
   }
 }
@@ -50,13 +50,13 @@
   padding: 0;
   line-height: 22px;
   
-  color: #262521; //#333333;
+  color: $color-0-txt; 
   opacity: .88;
   font-size: 12px;
   font-weight: 400;
   
   &:hover {
-    color: #5FAFEB;
+    color: $color-hl-light;
     text-decoration: none;
   }
   
@@ -67,7 +67,7 @@
 }
 
 .nav-menu-link.active {
-  color: #262521; //#666666;
+  color: $color-0-txt; 
   opacity: .56;
   //font-weight: 500;
   text-decoration: none;
