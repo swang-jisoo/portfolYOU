@@ -14,9 +14,15 @@
   //cursor: auto;
 }*/
 
-$color-bg: #333333; //#f2e6d0;
-$color-txt: #262521;
-  
+$color-0-bg: #F2E6D0; //bg, txt-light
+$color-1: #D4CFBE; 
+$color-2: #737066;
+$color-3: #4E4C44;
+$color-4-txt: #262521; //txt-dark
+$color-5: #0B0A08; 
+$color-hl-light: #6FDBA9;
+$color-hl-dark: #26543F;
+
 // base //
 body {
   min-width: 320px;
@@ -24,8 +30,8 @@ body {
   margin: 0;
   padding: 0;
   
-  background-color: $color-bg;
-  color: #262521;
+  background-color: $color-0-bg;
+  color: $color-4-txt;
   font-family: 'Roboto', sans-serif; //'Montserrat', sans-serif; 
   font-style: normal;
   font-size: 17px;
@@ -34,8 +40,8 @@ body {
 }
 
 ::selection {
-  background-color: #234661;
-  color: #f2e6d0;
+  background-color: $color-hl-dark;
+  color: $color-0-bg;
 }
 
 // class //
@@ -92,7 +98,7 @@ body {
 .container-col1-bg {
   overflow: hidden;
   padding: 62px 40px 66px;  
-  background: #D4CFBE; //var(--panel-color);
+  background: $color-1; //var(--panel-color);
   border-radius: 20px;
 }
 
@@ -103,7 +109,7 @@ body {
   overflow: hidden;
   padding: 43px 50px 64px;
   justify-content: space-between;
-  background: #D4CFBE; //var(--panel-color);
+  background: $color-1; //var(--panel-color);
   border-radius: 20px;
 }
 
@@ -158,7 +164,7 @@ body {
 
 // design //
 .text-bright {
-  color: #F2E6D0;
+  color: $color-0-bg;
 }
 
 /*.text-center {
