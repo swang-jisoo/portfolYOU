@@ -60,17 +60,11 @@
     color: $color-blue-medium;
     text-decoration: none;
   }
-  
-  //&::after {
-    //color: #666666;
-    //transition: all 0s;
-  //}
 }
 
 .nav-menu-link.active {
   color: $color-blue-medium; 
-  opacity: .56;
-  //font-weight: 500;
+  //opacity: .56;
   text-decoration: none;
 }
 
