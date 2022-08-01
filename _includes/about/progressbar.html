@@ -1,0 +1,18 @@
+<div class="circle-progress">
+  <h4 class="mb-4 text-center">{{ include.title }}</h4>
+  
+  <div class="circle-progress-content">
+    {% for item in include.source %}
+
+      <span class="circle">
+        <span class="bar">
+        </span>
+      </span>
+
+      <svg>
+        <circle class="bg" cx="57" cy="57" r="52" />
+        <circle class="meter-1" cx="57" cy="57" r="52" />
+      </svg>
+    {% endfor %}
+  </div>
+</div>
