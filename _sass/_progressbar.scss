@@ -1,0 +1,35 @@
+var RADIUS = 54;
+var CIRCUMFERENCE = 2 * Math.PI * RADIUS;
+
+function progress(per) {
+  var progress = per / 100;
+  var dashoffset = CIRCUMFERENCE * (1 - progress);
+  //value.innerHTML=per +'%';
+  //bar.style.strokeDashoffset = dashoffset;
+}
+
+svg {
+  width: 114px;
+  height: 114px;
+  margin: 1em;
+}
+
+.circle-progress-content {
+  display: flex;
+}
+
+.bg {
+  fill: none;
+  stroke: $color-blue-dark;
+  stroke-opacity: .3;
+  stroke-width: 10px;
+}
+
+[class^="meter-"] {
+  fill: none;
+  stroke-width: 10px;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  
+}
