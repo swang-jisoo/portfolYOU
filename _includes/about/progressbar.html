@@ -1,15 +1,16 @@
   <div class="col-lg">
     <h4 class="mb-4 text-center">{{ include.title }}</h4>
 
-    <div class="progress-stats row">
+    <ul class="progress-stats">
       {% for item in include.source %}
-        <div class="stat column lg-3">
+        <li class="stat">
           <svg>
-            <circle class="bg" cx="57" cy="57" r="52" />
+            <!--<circle class="bg" cx="57" cy="57" r="52" />-->
+            <circle class="frame" cx="60" cy="60" r="54" stroke-width="12" />
             <!--<circle class="data" cx="57" cy="57" r="52" />-->
           </svg>
-        </div>
+        </li>
       {% endfor %}
-    </div>
+    </ul>
     
   </div>
