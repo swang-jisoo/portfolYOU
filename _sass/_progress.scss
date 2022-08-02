@@ -16,6 +16,12 @@
   //transform: rotate(-90deg);
 }
 
+@property --pgColor {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: $color-blue-light;
+}
+
 @property --pgPercentage {
   syntax: '<number>';
   inherits: false;
@@ -28,36 +34,21 @@
 }
 
 .circle-progressbar {
-  //--size: 12rem;
-  --fg: #369;
-  --bg: #1E4F62;
+  //--fg: #369;
+  //--bg: #fff;
+  --pgColor: var(--color);
   --pgPercentage: var(--value);
-  width: 100%; // var(--size);
-  height: 100%; // var(--size);
+  width: 100%; 
+  height: 100%; 
   border-radius: 50%;
   background: 
     radial-gradient(closest-side, $color-blue-light 80%, transparent 0 99.9%, $color-blue-light 0),
-    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+    conic-gradient(var(--pgColor) calc(var(--pgPercentage) * 1%), $color-blue-light 0)
     ;
   animation: growProgressBar 3s 1 forwards;
-  
-  //display: grid;
-  //place-items: center;
-  
-  //font-family: Helvetica, Arial, sans-serif;
-  //font-size: calc(var(--size) / 5);
-  //color: var(--fg);
-  
-  //&::before {
-  //  counter-reset: percentage var(--value);
-  //  content: counter(percentage) '%';
-  //}
 }
 
-/*div[role="progressbar"]::before {
-  counter-reset: percentage var(--value);
-  content: counter(percentage) '%';
-}*/
+
 
 
 
