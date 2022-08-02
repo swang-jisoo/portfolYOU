@@ -111,7 +111,7 @@
 @keyframes anim_circle {
   to {
     //stroke-dashoffset: strokeDashoffset(attr(data-stroke-dashoffset));
-    stroke-dashoffset: calc(360 * (1 - ${this.data-percentage}));
+    stroke-dashoffset: calc(360 * (1 - parseInt(${this.data-percentage})));
   }
 }
 
