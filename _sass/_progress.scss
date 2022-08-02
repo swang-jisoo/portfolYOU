@@ -96,9 +96,9 @@
   stroke-width: 10px;
 }
 
-.circle-bar {
+.circle-b {
   fill: none;
-  stroke: #4584b6; //'#'var(--color);
+  stroke: var(--color);
   stroke-width: 10px;
   stroke-linecap: round;
   stroke-dasharray: 360;
@@ -111,7 +111,7 @@
 @keyframes anim_circle {
   to {
     //stroke-dashoffset: strokeDashoffset(attr(data-stroke-dashoffset));
-    stroke-dashoffset: calc(360 * (1 - var(--value) / 100));
+    stroke-dashoffset: calc(360 * (1 - 50 / 100));
   }
 }
 
