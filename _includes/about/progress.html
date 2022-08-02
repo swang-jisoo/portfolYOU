@@ -4,9 +4,21 @@
     <div class="progress-stats">
       {% for item in include.source %}
         <div class="stat">
-          <svg class="stat-svg">
-            <circle class="bg" cx="57" cy="57" r="52" />
-          </svg>
+          <!--<svg class="stat-svg">
+            <circle class="frame" cx="57" cy="57" r="52" />
+            <circle class="value" cx="57" cy="57" r="52" />
+          </svg>-->
+          <div class="progress-bar bg-{{ item.color | default: "primary" }} wow animated slideInLeft" 
+               data-wow-delay="{{ forloop.index | divided_by: 20.0 }}"
+               role="progressbar" 
+               aria-valuenow="{{ item.percentage }}" 
+               aria-valuemin="0" 
+               aria-valuemax="100" 
+               style="--value:{{ item.percentage }}">
+          </div>
+        </div>
+        <div class="caption">
+          <span class="mb-1">{{ skill.name }}</span>
         </div>
       {% endfor %}
     </div>
