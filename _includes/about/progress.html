@@ -5,25 +5,25 @@
       {% for item in include.source %}
         <div class="stats-item">
           <svg class="svg-circle">
-            <circle class="circle-frame" cx="57" cy="57" r="52" 
+            <circle class="circle-frame" 
+                    cx="57" cy="57" r="52" 
                     fill="none"
                     stroke="#1E4F62"
                     stroke-opacity=".2"
                     stroke-width="10">
             </circle>
-            <circle class="circle-bar" cx="57" cy="57" r="52"
+            <circle class="circle-bar wow animated slideInLeft" 
+                    cx="57" cy="57" r="52"
+                    fill="none"
                     stroke="#{{ item.color }}"
-                    stroke-linecap="round">
+                    stroke-width="10"
+                    stroke-linecap="round"
+                    data-wow-delay="{{ forloop.index | divided_by: 20.0 }}"
+                    aria-valuenow="{{ item.percentage }}"
+                    aria-valuemin="0" 
+                    aria-valuemax="100" >
             </circle>
           </svg>
-          <!--<div class="progress-bar bg-{{ item.color | default: "primary" }} wow animated slideInLeft" 
-               data-wow-delay="{{ forloop.index | divided_by: 20.0 }}"
-               role="progressbar" 
-               aria-valuenow="{{ item.percentage }}" 
-               aria-valuemin="0" 
-               aria-valuemax="100" 
-               style="width: {{ skill.percentage }}%;">
-          </div>-->
           <!--<div class="caption">
             <span class="mb-1">{{ skill.name }}</span>
           </div>-->
