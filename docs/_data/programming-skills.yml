@@ -1,16 +1,16 @@
 - name: Python
   percentage: 90
-  icon:
+  icon: /assets/images/logo_python.png
   color: 4584b6
   
 - name: Tensorflow
   percentage: 90
-  icon: 
+  icon: /assets/images/logo_tf.png
   color: F28705 
   
 - name: PyTorch
   percentage: 90
-  icon: 
+  icon: /assets/images/logo_pytorch.png
   color: F23005
 
 #- name: MXNet
@@ -20,12 +20,12 @@
 
 - name: R
   percentage: 80
-  icon: 
+  icon: /assets/images/logo_r.png
   color: 1B61B2
 
 - name: Java
   percentage: 70
-  icon:
+  icon: /assets/images/logo_java.png
   color: 5382a1
   
 #- name: C/C++
@@ -35,16 +35,16 @@
   
 - name: SQL
   percentage: 60
-  icon: 
+  icon: /assets/images/logo_sql.png
   color: 0079D6
   
 - name: AWS
   percentage: 70
-  icon: 
+  icon: /assets/images/logo_aws.png
   color: FF9900
   
 - name: Azure
   percentage: 60
-  icon: 
+  icon: /assets/images/logo_azure.png
   color: 00A1F1
   
