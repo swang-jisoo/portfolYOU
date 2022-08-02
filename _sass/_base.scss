@@ -99,7 +99,7 @@ body {
 
 .container-col1-bg {
   overflow: hidden;
-  padding: 45px 50px 45px;  
+  padding: 45px 50px 60px;  
   background: $color-blue-light; //var(--panel-color);
   border-radius: 20px;
 }
@@ -110,7 +110,7 @@ body {
   flex-direction: column;
   
   overflow: hidden;
-  padding: 45px 50px 45px;
+  padding: 45px 50px 60px;
   justify-content: space-between;
   background: $color-blue-light; //var(--panel-color);
   border-radius: 20px;
