@@ -8,11 +8,23 @@ function progress(per) {
   //bar.style.strokeDashoffset = dashoffset;
 }
 
-svg {
+.progress-stats {
+  //list-style: none;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.stat {
+  padding: 0 8px;
+  width: 114px;
+  height: 114px;
+}
+
+/*svg {
   width: 114px;
   height: 114px;
   margin: 1em;
-}
+}*/
 
 .circle-progress-content {
   display: flex;
@@ -24,6 +36,8 @@ svg {
   stroke-opacity: .3;
   stroke-width: 10px;
 }
+
+
 
 //[class^="meter-"] {
 .progress{
