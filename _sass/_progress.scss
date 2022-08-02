@@ -10,8 +10,8 @@
 
 .circle-progressbar-item {
   position: relative;
-  width: 114px;
-  height: 114px;
+  width: 120px;
+  height: 120px;
   margin: 24px 1em;
   transform: rotate(-90deg);
 }
@@ -113,7 +113,7 @@
   stroke-width: 10px;
   stroke-linecap: round;
   stroke-dasharray: 360;
-  stroke-dashoffset: 180;
+  stroke-dashoffset: calc(360 * (1 - (var(--value) * 1%)));
   //animation: anim_circle 1s ease-in-out forwards;
   //transition: anim_circle 1s ease-in-out forwards;
 }
@@ -123,7 +123,7 @@
 @keyframes anim_circle {
   to {
     //stroke-dashoffset: strokeDashoffset(attr(data-stroke-dashoffset));
-    stroke-dashoffset: strokeDashoffset(attr(data-stroke-dashoffset));
+    stroke-dashoffset: strokeDashoffset2(var(--value));
     //stroke-dashoffset: calc(360 * (1 - (var(--value) * 1%)));
   }
 }
