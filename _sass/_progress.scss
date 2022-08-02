@@ -96,13 +96,13 @@
   stroke-width: 10px;
 }
 
-.circle-bar {
+.circle-a {
   fill: none;
   stroke: var(--color);
   stroke-width: 10px;
   stroke-linecap: round;
   stroke-dasharray: 360;
-  stroke-dashoffset: 360;
+  //stroke-dashoffset: calc(360 - (360 * var(--value)) / 100);
   animation: anim_circle 1s ease-in-out forwards;
 }
 
