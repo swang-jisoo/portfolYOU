@@ -10,8 +10,8 @@
 
 .circle-progressbar-item {
   position: relative;
-  width: 120px;
-  height: 120px;
+  width: 124px;
+  height: 124px;
   margin: 24px 1em;
   transform: rotate(-90deg);
 }
@@ -113,7 +113,7 @@
   stroke-width: 10px;
   stroke-linecap: round;
   stroke-dasharray: 360;
-  stroke-dashoffset: calc(360 * (1 - (var(--value) * 1%)));
+  stroke-dashoffset: strokeDashoffset2(var(--value));
   //animation: anim_circle 1s ease-in-out forwards;
   //transition: anim_circle 1s ease-in-out forwards;
 }
