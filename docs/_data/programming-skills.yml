@@ -1,24 +1,40 @@
-- name: Python (Tensorflow, PyTorch, OpenCV)
+- name: Python
   percentage: 90
+  icon: 
+  color: danger
+  
+- name: Tensorflow
+  percentage: 90
+  icon: 
+  color: #E55B2D
+  
+- name: PyTorch
+  percentage: 90
+  icon: 
   color: danger
 
 - name: R
   percentage: 80
+  icon: 
   color:
 
 - name: Java
   percentage: 70
+  icon: 
   color:
   
 - name: SQL
   percentage: 60
-  color: secondary
+  icon: 
+  color: #0079D6
   
 - name: AWS
   percentage: 70
-  color:
+  icon: 
+  color: #FF9A00
   
 - name: Azure
   percentage: 60
-  color:
+  icon: 
+  color: #38CAF3
   
