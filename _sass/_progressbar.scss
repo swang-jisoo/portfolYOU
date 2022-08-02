@@ -25,11 +25,24 @@ svg {
   stroke-width: 10px;
 }
 
-[class^="meter-"] {
+//[class^="meter-"] {
+.progress{
   fill: none;
   stroke-width: 10px;
   stroke-linecap: round;
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
-  
+  stroke: lime;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 160;
+  animation: progress-1 .75s ease-out;
+}
+
+@keyframes progress-1 {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 100;
+    }
 }
