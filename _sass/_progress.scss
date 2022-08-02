@@ -12,35 +12,46 @@
   position: relative;
   width: 114px;
   height: 114px;
-  margin: 0.5em 1em;
-  transform: rotate(-90deg);
+  margin: 24px 1em;
+  //transform: rotate(-90deg);
+}
+
+@property --pgPercentage {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 0%;
+}
+
+@keyframes growProgressBar {
+  0%, 33% { --pgPercentage: 0%; }
+  100% { --pgPercentage: var(--value); }
 }
 
 .circle-progressbar {
   //--size: 12rem;
   --fg: #369;
-  --bg: #def;
+  --bg: $color-blue-dark;
   --pgPercentage: var(--value);
   width: 100%; // var(--size);
   height: 100%; // var(--size);
   border-radius: 50%;
   background: 
-    radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+    radial-gradient(closest-side, $color-blue-light 80%, transparent 0 99.9%, $color-blue-light 0),
     conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
     ;
   animation: growProgressBar 3s 1 forwards;
   
-  //display: grid;
-  //place-items: center;
+  display: grid;
+  place-items: center;
   
   //font-family: Helvetica, Arial, sans-serif;
   //font-size: calc(var(--size) / 5);
   //color: var(--fg);
   
-  &::before {
-    counter-reset: percentage var(--value);
-    content: counter(percentage) '%';
-  }
+  //&::before {
+  //  counter-reset: percentage var(--value);
+  //  content: counter(percentage) '%';
+  //}
 }
 
 /*div[role="progressbar"]::before {
@@ -48,16 +59,9 @@
   content: counter(percentage) '%';
 }*/
 
-@property --pgPercentage {
-  syntax: '<number>';
-  inherits: false;
-  initial-value: 0;
-}
 
-@keyframes growProgressBar {
-  0%, 33% { --pgPercentage: 0; }
-  100% { --pgPercentage: var(--value); }
-}
+
+
 
 
 
@@ -113,7 +117,7 @@
   
   //padding: 0.25em 0.5em;
   //border-radius: 0.25em;
-  transform: translate(-50%, -50%) rotate(90deg);
+  //transform: translate(-50%, -50%) rotate(90deg);
 }
 
 
