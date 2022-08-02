@@ -1,10 +1,14 @@
   <div class="col-lg">
     <h4 class="mb-4 text-center">{{ include.title }}</h4>
 
-    <div class="stats-progress">
+    <div class="circle-progressbar-container">
       {% for item in include.source %}
-        <div class="stats-item">
-          <svg class="svg-circle">
+        <div class="circle-progressbar-item">
+          <div class="circle-progressbar" role="progressbar"
+               aria-valuenow="{{ item.percentage }}" aria-valuemin="0" aria-valuemax="100" 
+               style="--value:{{ item.percentage }}">
+          </div>
+          <!--<svg class="svg-circle">
             <circle class="circle-frame" 
                     cx="57" cy="57" r="52" fill="none" 
                     stroke="#1E4F62" stroke-opacity=".2" stroke-width="10" 
@@ -16,7 +20,7 @@
                     stroke-dasharray="360" stroke-dashoffset="360"
                     data-stroke-dashoffset="{{ item.percentage }}">
             </circle>
-          </svg>
+          </svg>-->
           <span class="caption">{{ item.name }}</span>
         </div>
       {% endfor %}
