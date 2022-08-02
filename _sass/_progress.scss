@@ -113,7 +113,7 @@
   stroke-width: 10px;
   stroke-linecap: round;
   stroke-dasharray: 360;
-  stroke-dashoffset: 240;
+  stroke-dashoffset: 180;
   //animation: anim_circle 1s ease-in-out forwards;
   //transition: anim_circle 1s ease-in-out forwards;
 }
@@ -123,7 +123,8 @@
 @keyframes anim_circle {
   to {
     //stroke-dashoffset: strokeDashoffset(attr(data-stroke-dashoffset));
-    stroke-dashoffset: calc(var(--circumference) * (1 - (var(--value) * 1%)));
+    stroke-dashoffset: strokeDashoffset(attr(data-stroke-dashoffset));
+    //stroke-dashoffset: calc(360 * (1 - (var(--value) * 1%)));
   }
 }
 
