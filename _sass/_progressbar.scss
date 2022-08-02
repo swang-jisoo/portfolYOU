@@ -9,13 +9,23 @@ function progress(per) {
 }
 
 .progress-stats {
-  //display: flex;
-  //flex-wrap: wrap;
-  //flex-direction: row;
-  //width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
   
-  text-align: center;
-  margin: 0 auto;
+  //text-align: center;
+  //margin: 0 auto;
+}
+
+.progress-stats ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.progress-stats ul .stat {
+  padding: 0 8px;
 }
 
 .stat {
