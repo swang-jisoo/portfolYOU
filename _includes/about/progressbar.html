@@ -1,3 +1,20 @@
+  <div class="col-lg">
+    <h4 class="mb-4 text-center">{{ include.title }}</h4>
+
+    <div class="progress-stats">
+      {% for item in include.source %}
+        <div class="stat">
+          <svg>
+            <circle class="bg" cx="57" cy="57" r="52" />
+            <!--<circle class="data" cx="57" cy="57" r="52" />-->
+          </svg>
+        </div>
+      {% endfor %}
+    </div>
+    
+  </div>
+
+<!--
 {% if include.shape == 'horizontalbar' %}
 
   <h4 class="mb-4 text-center">{{ include.title }}</h4>
@@ -26,20 +43,6 @@
 
 
 {% elseif include.shape == 'circle' %}
-  <div class="col-lg">
-    <h4 class="mb-4 text-center">{{ include.title }}</h4>
 
-    <div class="progress-stats">
-      {% for item in include.source %}
-        <div class="stat">
-          <svg>
-            <circle class="bg" cx="57" cy="57" r="52" />
-            <!--<circle class="data" cx="57" cy="57" r="52" />-->
-          </svg>
-        </div>
-      {% endfor %}
-    </div>
-    
-  </div>
 {% endif %}
-
+-->
