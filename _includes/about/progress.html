@@ -11,9 +11,10 @@
                     stroke-opacity=".2"
                     stroke-width="10">
             </circle>
-            <!--<circle class="circle-bar" cx="57" cy="57" r="52"
-                    stroke="{{ item.color }}">
-            </circle>-->
+            <circle class="circle-bar" cx="57" cy="57" r="52"
+                    stroke="#{{ item.color }}"
+                    stroke-linecap="round">
+            </circle>
           </svg>
           <!--<div class="progress-bar bg-{{ item.color | default: "primary" }} wow animated slideInLeft" 
                data-wow-delay="{{ forloop.index | divided_by: 20.0 }}"
