@@ -16,15 +16,15 @@ function progress(per) {
 
 .stat {
   padding: 0 8px;
-  width: 114px;
-  height: 114px;
+  //width: 114px;
+  //height: 114px;
 }
 
-/*svg {
+svg {
   width: 114px;
   height: 114px;
   margin: 1em;
-}*/
+}
 
 .circle-progress-content {
   display: flex;
