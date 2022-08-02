@@ -111,12 +111,16 @@
 @keyframes anim_circle {
   to {
     //stroke-dashoffset: strokeDashoffset(attr(data-stroke-dashoffset));
-    stroke-dashoffset: calc(360 * (1 - var(--value)));
+    stroke-dashoffset: calc(360 * (1 - $num / 100));
   }
 }
 
 @function strokeDashoffset($num) {
   @return 360 - (360 * $num) / 100;
+}
+
+@function strokeDashoffset2($num) {
+  @return 360 * (1 - $num);
 }
 
 
