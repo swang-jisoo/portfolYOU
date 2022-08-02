@@ -102,12 +102,8 @@
   stroke-width: 10px;
   stroke-linecap: round;
   stroke-dasharray: 360;
-  stroke-dashoffset: var(--value);
+  stroke-dashoffset: 360;
   animation: anim_circle 1s ease-out; //ease-in-out forwards;
-}
-
-@function strokeDashoffset($num) {
-  @return 360 - (360 * $num) / 100;
 }
 
 @keyframes anim_circle {
@@ -115,12 +111,13 @@
     stroke-dashoffset: 360;
   }
   to {
-    stroke-dashoffset: strokeDashoffset(var(--value));
+    stroke-dashoffset: 360 - (360 * var(--value)) / 100;
   }
 }
 
-
-
+@function strokeDashoffset($num) {
+  @return 360 - (360 * $num) / 100;
+}
 
   
 .caption {
@@ -131,7 +128,7 @@
   //left: 0;
   //right: 0;
   //bottom: 0;
-  max-weight: 65px;
+  weight: 65px;
   height: 65px;
   text-align: center;
   //font-size: 16px;
