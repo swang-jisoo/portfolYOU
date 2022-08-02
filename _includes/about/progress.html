@@ -13,9 +13,7 @@
             <circle class="circle-bar" 
                     cx="57" cy="57" r="52" fill="none"
                     stroke="#{{ item.color }}" stroke-width="10" stroke-linecap="round"
-                    role="progressbar" style="width: {{ item.percentage }}%;"
-                    aria-valuenow="{{ skill.percentage }}" aria-valuemin="0" aria-valuemax="100"
-                    >
+                    stroke-dashoffset="{{ item.percentage }}">
             </circle>
           </svg>
           <p class="caption">{{ item.name }}</p>
