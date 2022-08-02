@@ -112,17 +112,17 @@
   stroke-width: 10px;
   stroke-linecap: round;
   stroke-dasharray: 360;
-  stroke-dashoffset: calc(360 * (1 - (var(--value) * 1%)));
+  stroke-dashoffset: 360;
   //animation: anim_circle 1s ease-in-out forwards;
   //transition: anim_circle 1s ease-in-out forwards;
 }
 
-
+$(".circle-ba").animate({stroke-dashoffset: calc(360 * (1 - (var(--value) * 1%)))}, 1s, ease-in-out, forwards);
 
 @keyframes anim_circle {
   to {
     //stroke-dashoffset: strokeDashoffset(attr(data-stroke-dashoffset));
-    stroke-dashoffset: calc(360 * (1 - 50 / 100));
+    stroke-dashoffset: calc(360 * (1 - (var(--value) * 1%)));
   }
 }
 
@@ -131,7 +131,7 @@
 }
 
 @function strokeDashoffset2($num) {
-  @return 360 * (1 - $num);
+  @return 360 * (1 - ($num * 1%));
 }
 
 
@@ -150,7 +150,7 @@
   
   //padding: 0.25em 0.5em;
   //border-radius: 0.25em;
-  //transform: translate(-50%, -50%) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
 }
 
 
