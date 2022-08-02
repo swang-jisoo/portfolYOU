@@ -1,21 +1,26 @@
   <div class="col-lg">
     <h4 class="mb-4 text-center">{{ include.title }}</h4>
 
-    <div class="progress-stats">
+    <div class="stats-progress">
       {% for item in include.source %}
-        <div class="stat">
-          <!--<svg class="stat-svg">
-            <circle class="frame" cx="57" cy="57" r="52" />
-            <circle class="value" cx="57" cy="57" r="52" />
-          </svg>-->
-          <div class="progress-bar bg-{{ item.color | default: "primary" }} wow animated slideInLeft" 
+        <div class="stats-svg">
+          <svg class="stats-svg-circle">
+            <circle class="circle-frame" cx="57" cy="57" r="52" 
+                    stroke="color-blue-dark"
+                    stroke-opacity=".2">
+            </circle>
+            <circle class="circle-bar" cx="57" cy="57" r="52"
+                    stroke="{{ item.color }}">
+            </circle>
+          </svg>
+          <!--<div class="progress-bar bg-{{ item.color | default: "primary" }} wow animated slideInLeft" 
                data-wow-delay="{{ forloop.index | divided_by: 20.0 }}"
                role="progressbar" 
                aria-valuenow="{{ item.percentage }}" 
                aria-valuemin="0" 
                aria-valuemax="100" 
                style="width: {{ skill.percentage }}%;">
-          </div>
+          </div>-->
         </div>
         <div class="caption">
           <span class="mb-1">{{ skill.name }}</span>
