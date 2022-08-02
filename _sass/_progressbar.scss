@@ -9,12 +9,21 @@ function progress(per) {
 }
 
 .progress-stats {
-  //list-style: none;
-  margin: 0;
-  padding: 0 20px;
+  //display: flex;
+  //flex-wrap: wrap;
+  //flex-direction: row;
+  //width: 100%;
+  
+  text-align: center;
+  margin: 0 auto;
 }
 
 .stat {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-width: 0px;
+  
   padding: 0 8px;
   //width: 114px;
   //height: 114px;
