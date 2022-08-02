@@ -13,6 +13,11 @@
   icon: 
   color: F23005
 
+#- name: MXNet
+#  percentage: 
+#  icon: 
+#  color: 
+
 - name: R
   percentage: 80
   icon: 
@@ -22,6 +27,11 @@
   percentage: 70
   icon:
   color: 5382a1
+  
+#- name: C/C++
+#  percentage: 
+#  icon:
+#  color: 
   
 - name: SQL
   percentage: 60
