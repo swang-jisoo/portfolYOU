@@ -43,9 +43,35 @@
   border-radius: 50%;
   background: 
     radial-gradient(closest-side, $color-blue-light 80%, transparent 0 99.9%, $color-blue-light 0),
-    conic-gradient(var(--pgColor) calc(var(--pgPercentage) * 1%), $color-blue-light 0)
+    conic-gradient(var(--pgColor) calc(var(--pgPercentage) * 1%), white 0)
     ;
   animation: growProgressBar 3s 1 forwards;
+}
+
+.circle-edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 90px;
+        left: 90px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: var(--color);
+        z-index: 1;
+    }
+    
+    &::before {
+        transform: translate(0, -90px);
+    }
+    
+    &::after {
+        transform: rotate(90deg) translate(0, -90px) ;
+    }
 }
 
 
