@@ -1,7 +1,7 @@
 .stats-progress {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   //min-width: 270px;
   width: 100%;
@@ -34,4 +34,14 @@
   stroke-width: 10px;
 }*/
 
+.caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  text-align: center;
+  //font-size: 16px;
+  //line-height: 120px;
+}
 
