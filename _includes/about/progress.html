@@ -13,10 +13,11 @@
             <circle class="circle-bar" 
                     cx="57" cy="57" r="52" fill="none"
                     stroke="#{{ item.color }}" stroke-width="10" stroke-linecap="round"
-                    stroke-dasharray="360" stroke-dashoffset="{{ item.percentage }}">
+                    stroke-dasharray="360" stroke-dashoffset="360"
+                    data-stroke-dashoffset="{{ item.percentage }}">
             </circle>
           </svg>
-          <p class="caption">{{ item.name }}</p>
+          <span class="caption">{{ item.name }}</span>
         </div>
       {% endfor %}
     </div>
