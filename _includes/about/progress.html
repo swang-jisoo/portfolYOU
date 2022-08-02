@@ -25,7 +25,8 @@
                            --value: {{ item.percentage }}" >
             </circle>
           </svg>
-          <span class="caption">{{ item.name }}</span>
+          <!--<span class="caption">{{ item.name }}</span>-->
+          <img class="caption" src="{{ item.icon }}" alt="{{ item.name }}">
         </div>
       {% endfor %}
     </div>
