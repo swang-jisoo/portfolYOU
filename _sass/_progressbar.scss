@@ -11,39 +11,45 @@ function progress(per) {
 .progress-stats {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  //min-width: 270px;
   width: 100%;
-  
-  //text-align: center;
-  //margin: 0 auto;
-}
-
-.progress-stats ul {
-  list-style: none;
-  margin: 0;
-  padding: 0 20px;
-}
-
-.progress-stats ul .stat {
-  padding: 0 8px;
+  min-height: 100%;
 }
 
 .stat {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  min-width: 0px;
-  
-  padding: 0 8px;
-  //width: 114px;
-  //height: 114px;
-}
-
-svg {
+  position: relative;
   width: 114px;
   height: 114px;
   margin: 1em;
+  transform: rotate(-90deg);
 }
+
+.stat-svg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.stat-svg-circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 10;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke: hsl(0, 0%, 100%);
+  stroke-linecap: round;
+  transform: translate(5px, 5px); // stroke-width / 2
+}
+
+.circle-anim {
+  animation: anim_circle-html 1s ease-in-out forwards;
+}
+
+
+
 
 .circle-progress-content {
   display: flex;
