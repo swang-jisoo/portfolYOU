@@ -1,40 +1,40 @@
 - name: Python
   percentage: 90
-  icon: 
-  color: danger
+  icon:
+  color: 4584b6
   
 - name: Tensorflow
   percentage: 90
   icon: 
-  color: #E55B2D
+  color: F28705 
   
 - name: PyTorch
   percentage: 90
   icon: 
-  color: danger
+  color: F23005
 
 - name: R
   percentage: 80
   icon: 
-  color:
+  color: 1B61B2
 
 - name: Java
   percentage: 70
-  icon: 
-  color:
+  icon:
+  color: 5382a1
   
 - name: SQL
   percentage: 60
   icon: 
-  color: #0079D6
+  color: 0079D6
   
 - name: AWS
   percentage: 70
   icon: 
-  color: #FF9A00
+  color: FF9900
   
 - name: Azure
   percentage: 60
   icon: 
-  color: #38CAF3
+  color: 00A1F1
   
