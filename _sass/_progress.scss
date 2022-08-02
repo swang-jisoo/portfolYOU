@@ -34,6 +34,24 @@
   stroke-width: 10px;
 }*/
 
+.circle-bar {
+  //transition: 
+  animation: anim_circle 1s ease-in-out forwards;
+}
+
+//$(".circle-bar").animate({width: "70%"}, 2500);
+
+@keyframes anim_circle {
+  to {
+    stroke-dashoffset: strokeDashoffset(attr(data-stroke-dashoffset));
+  }
+}
+
+@function strokeDashoffset($num) {
+  @return 360 - (360 * $num) / 100;
+}
+
+  
 .caption {
   position: absolute;
   top: 50%;
