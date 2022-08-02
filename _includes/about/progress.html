@@ -6,7 +6,8 @@
         <div class="circle-progressbar-item">
           <div class="circle-progressbar" role="progressbar"
                aria-valuenow="{{ item.percentage }}" aria-valuemin="0" aria-valuemax="100" 
-               style="--value:{{ item.percentage }}">
+               style="--color: #{{ item.color }};
+                      --value: {{ item.percentage }}">
           </div>
           <!--<svg class="svg-circle">
             <circle class="circle-frame" 
