@@ -13,7 +13,7 @@
   width: 114px;
   height: 114px;
   margin: 0.5em 1em;
-  transform: translate(-50%, -50%) rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .svg-circle {
@@ -35,7 +35,7 @@
 }*/
 
 .caption {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   //top: 0;
