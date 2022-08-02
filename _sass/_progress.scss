@@ -1,7 +1,7 @@
 .stats-progress {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   //min-width: 270px;
   width: 100%;
@@ -12,8 +12,8 @@
   position: relative;
   width: 114px;
   height: 114px;
-  margin: 0.5em 1em;
-  transform: rotate(-90deg);
+  //margin: 0.5em 1em;
+  //transform: rotate(-90deg);
 }
 
 .svg-circle {
@@ -22,10 +22,16 @@
   height: 100%;
 }
 
-/*.circle-frame, .circle-bar {
+/*.circle-frame {
   fill: none;
-  //stroke: $color-blue-dark;
-  //stroke-opacity: .2;
+  stroke: $color-blue-dark;
+  stroke-opacity: .2;
+  stroke-width: 10px;
+}
+
+.circle-bar {
+  fill: none;
   stroke-width: 10px;
 }*/
+
 
