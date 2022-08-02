@@ -111,7 +111,7 @@
     stroke-dashoffset: 360;
   }
   to {
-    stroke-dashoffset: 360 - (360 * var(--value)) / 100;
+    stroke-dashoffset: calc(360 - (360 * var(--value)) / 100);
   }
 }
 
