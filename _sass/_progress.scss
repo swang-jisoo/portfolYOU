@@ -30,7 +30,7 @@
 .circle-progressbar {
   //--size: 12rem;
   --fg: #369;
-  --bg: $color-blue-dark;
+  --bg: #1E4F62;
   --pgPercentage: var(--value);
   width: 100%; // var(--size);
   height: 100%; // var(--size);
@@ -41,8 +41,8 @@
     ;
   animation: growProgressBar 3s 1 forwards;
   
-  display: grid;
-  place-items: center;
+  //display: grid;
+  //place-items: center;
   
   //font-family: Helvetica, Arial, sans-serif;
   //font-size: calc(var(--size) / 5);
