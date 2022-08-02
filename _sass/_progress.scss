@@ -111,19 +111,24 @@
   stroke-width: 10px;
   stroke-linecap: round;
   stroke-dasharray: 360;
-  stroke-dashoffset: 360;
-  animation: anim_circle 1s ease-in-out forwards;
-}
-
-@keyframes anim_circle {
-  to {
-    stroke-dashoffset: calc(360 - (360 * var(--value)) / 100);
-  }
+  stroke-dashoffset: strokeDashoffset(var(--value));
+  animation: anim_circle 1s ease-out; //ease-in-out forwards;
 }
 
 @function strokeDashoffset($num) {
   @return 360 - (360 * $num) / 100;
 }
+
+@keyframes anim_circle {
+  from{
+    stroke-dashoffset: 360;
+  }
+  to {
+    stroke-dashoffset: strokeDashoffset(var(--value));
+  }
+}
+
+
 
 
   
@@ -135,8 +140,8 @@
   //left: 0;
   //right: 0;
   //bottom: 0;
-  weight: 35px;
-  height: 35px;
+  max-weight: 65px;
+  height: 65px;
   text-align: center;
   //font-size: 16px;
   //line-height: 120px;
