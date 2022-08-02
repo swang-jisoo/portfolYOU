@@ -17,13 +17,13 @@
 }
 
 @property --pgPercentage {
-  syntax: '<percentage>';
+  syntax: '<number>';
   inherits: false;
-  initial-value: 0%;
+  initial-value: 0;
 }
 
 @keyframes growProgressBar {
-  0%, 33% { --pgPercentage: 0%; }
+  0%, 33% { --pgPercentage: 0; }
   100% { --pgPercentage: var(--value); }
 }
 
