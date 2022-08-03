@@ -86,23 +86,20 @@
   stroke-width: 10px;
   stroke-linecap: round;
   stroke-dasharray: 360;
-  //stroke-dashoffset: 360; //calc(360 - (360 * var(--value)) / 100);
+  stroke-dashoffset: 360; //calc(360 - (360 * var(--value)) / 100);
   //transition: {stroke-dashoffset: calc((360 - (360 * var(--value)) / 100));} ease-in-out 1s 0.5s;
-  animation: anim_circle 3s ease-in-out forwards;
+  animation: anim_circle 2s linear forwards;
 }
 
 @keyframes anim_circle {
-  0%, 33% {
-    stroke-dashoffset: 360;
-  }
   100% {
     stroke-dashoffset: calc(360 - (360 * var(--value)) / 100);
   }
 }
 
-@function strokeDashoffset($num) {
+/*@function strokeDashoffset($num) {
   @return 360 - (360 * $num) / 100;
-}
+}*/
 
 /* caption */  
 .svg-caption {
