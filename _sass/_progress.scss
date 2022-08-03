@@ -86,7 +86,7 @@
   stroke-width: 10px;
   stroke-linecap: round;
   stroke-dasharray: 360;
-  stroke-dashoffset: 360; //calc(360 - (360 * var(--value)) / 100);
+  //stroke-dashoffset: 360; //calc(360 - (360 * var(--value)) / 100);
   //transition: {stroke-dashoffset: calc((360 - (360 * var(--value)) / 100));} ease-in-out 1s 0.5s;
   animation: anim_circle 3s 1 forwards; //ease-in-out forwards;
 }
