@@ -103,12 +103,12 @@
   stroke-linecap: round;
   stroke-dasharray: 360;
   stroke-dashoffset: calc(360 - (360 * var(--value)) / 100);
-  transition: anim_circle 3s ease-out; //ease-in-out forwards;
+  transition: anim_circle 3s ease-in-out forwards;
 }
 
 @keyframes anim_circle {
   from{
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 360;
   }
   to {
     stroke-dashoffset: calc(360 - (360 * var(--value)) / 100);
