@@ -103,7 +103,7 @@
   stroke-linecap: round;
   stroke-dasharray: 360;
   stroke-dashoffset: calc(360 - (360 * var(--value)) / 100);
-  animation: anim_circle 3s ease-in-out forwards;
+  animation: anim_circle 3s ease-out; //ease-in-out forwards;
 }
 
 @keyframes anim_circle {
@@ -129,7 +129,7 @@
   //right: 0;
   //bottom: 0;
   weight: 65px;
-  height: 65px;
+  height: 50px;
   text-align: center;
   //font-size: 16px;
   //line-height: 120px;
