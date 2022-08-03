@@ -2,20 +2,57 @@
 layout: default
 ---
 
-<section class="site-header-height">
+<section id="siteheader" class="site-header-height">
   <!-- {% include landing.html %} -->
   <div class="section-width">
-    <h1 class="site-header-title-1 text-center"> 
-      Hi, I am {{ site.author.name }}.
-      <br>
-      {{ site.author.description }} 
+    
+    <h1 class="text-size-96 text-center"> 
+      Hi, I am <span class="text-highlight">{{ site.author.name }}</span>.
     </h1>
+    <p class="text-size-40 text-center">
+      {{ content }} 
+    </p>
+    
   </div>
 </section>
 
-<section class="section-height">
+<section id="recentnews" class="section-height">
   <div class="section-width">
-    <h2 class="section-title-2 text-center">Recent News</h2>
+    
+    <h2 class="text-size-48 text-center">Recent News</h2>
+    
+    <div>
     {% include about/timeline_light.html source=site.data.news %}
+    </div>
+    
+  </div>
+</section>
+
+<section id="briefbio" class="section-height">
+  <div class="section-width">
+    
+    <h2 class="section-title-2 text-center">Brief Bio</h2>
+    
+    <div id="experience" class="row-col2">
+      <div class="container-col2-bg">
+        {% include about/timeline_light.html title="Work & Research" source=site.data.experience %}
+      </div>
+      <div class="container-col2-bg">
+        {% include about/timeline_light.html title="Education" source=site.data.education %}
+      </div>
+    </div>
+    
+    <div id="skills" class="container-col1-bg">
+      {% include about/progress.html shape="circle" title="Skills" source=site.data.programming-skills %}
+    </div>
+    
+  </div>
+</section>
+
+<section id="knowmore" class="section-height">
+  <div class="section-width">
+    
+    <h2 class="section-title-2 text-center"> Get to know more about me </h2>
+    
   </div>
 </section>
