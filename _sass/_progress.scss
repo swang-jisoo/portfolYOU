@@ -92,10 +92,10 @@
 }
 
 @keyframes anim_circle {
-  from {
+  0% {
     stroke-dashoffset: 360;
   }
-  to {
+  100% {
     stroke-dashoffset: calc(360 - (360 * var(--value)) / 100);
   }
 }
