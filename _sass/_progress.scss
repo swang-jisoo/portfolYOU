@@ -17,13 +17,27 @@
 }
 
 /* conic-gradient */
+/*
+@property --pgColor {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #fff;
+}
+
+@property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+}*/
+
 @keyframes growProgressBar {
   0%, 33% { --pgPercentage: 0; }
   100% { --pgPercentage: var(--value); }
 }
 
 .circle-progressbar {
-  --pgPercentage: var(--value);
+  //--pgColor: var(--color);
+  //--pgPercentage: var(--value);
   width: 100%; 
   height: 100%; 
   border-radius: 50%;
