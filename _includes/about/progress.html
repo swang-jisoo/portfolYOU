@@ -10,10 +10,11 @@
                       --value: {{ item.percentage }}">
           </div>-->
           <svg class="svg-circle">
-            <circle class="circle-frame" cx="62" cy="62" r="57"></circle>
-            <circle class="circle-graph" cx="62" cy="62" r="57" 
+            <circle class="circle-frame" ></circle>
+            <circle class="circle-graph" 
                     style="--color: #{{ item.color }};
-                           --value: {{ item.percentage }}" >
+                           --value: {{ item.percentage }}" 
+                    >
             </circle>
           </svg>
           <img class="svg-caption" src="{{ item.icon }}" alt="{{ item.name }}">
