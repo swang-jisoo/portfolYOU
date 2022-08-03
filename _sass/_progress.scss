@@ -17,12 +17,6 @@
 }
 
 /* conic-gradient */
-/*@property --pgColor {
-    syntax: '<color>';
-    inherits: false;
-    initial-value: #fff;
-}*/
-
 @property --pgPercentage {
     syntax: '<number>';
     inherits: false;
@@ -35,7 +29,6 @@
 }
 
 .circle-progressbar {
-  //--pgColor: var(--color);
   --pgPercentage: var(--value);
   width: 100%; 
   height: 100%; 
@@ -99,10 +92,10 @@
 }
 
 @keyframes anim_circle {
-  from{
+  0%{
     stroke-dashoffset: 360;
   }
-  to {
+  100% {
     stroke-dashoffset: calc(360 - (360 * var(--value)) / 100);
   }
 }
