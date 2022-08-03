@@ -24,6 +24,7 @@ $color-blue-light: #E2E6EF; // overlay-bg
 $color-blue-medium: #2E728C; //themed
 $color-blue-dark: #1E4F62;
 $color-pink: #D9ADA9; //highlight
+$color-yellow: #FFD49B; //selection
 
 // base //
 body {
@@ -39,11 +40,6 @@ body {
   font-size: 17px;
   font-weight: 400;
   letter-spacing: -0.022em;
-}
-
-::selection {
-  background-color: $color-pink;
-  color: $color-grey-5;
 }
 
 // class //
@@ -170,17 +166,18 @@ body {
   color: $color-grey-0;
 }
 
-/*.text-center {
-  text-align: center;
+.text-highlight {
+  display: inline;
+  padding: .25em 0;
+  background: $color-pink;
+  color: $color-grey-5;
+  box-shadow: .5em 0 0 $color-pink, -.5em 0 0 $color-pink;
 }
 
-.text-left {
-  text-align: left;
+::selection {
+  background-color: $color-yellow;
+  color: $color-grey-5;
 }
-
-.text-right {
-  text-align: right;
-}*/
 
 .site-header-title-1 {
   line-height: 1.25;
