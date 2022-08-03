@@ -22,7 +22,7 @@ layout: default
     <h2 class="section-title-2 text-center">Recent News</h2>
     
     <div>
-    {% include about/timeline_light.html source=site.data.news %}
+      {% include about/timeline_light.html source=site.data.news %}
     </div>
     
   </div>
@@ -49,10 +49,26 @@ layout: default
   </div>
 </section>
 
+<section id="research" class="section-height">
+  <div class="section-width">
+    
+    <h2 class="section-title-2 text-center">Research</h2>
+    
+    <div>
+      {% include projects/index.html %}
+    </div>
+    
+  </div>
+</section>
+
 <section id="knowmore" class="section-height-2">
   <div class="section-width">
     
     <h2 class="section-title-2 text-center"> Get to know more about me </h2>
     
+    <div>
+      {% include blog/index.html %}
+    </div>
+  
   </div>
 </section>
