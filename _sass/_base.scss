@@ -254,42 +254,54 @@ body {
 }
 
 @media only screen and (max-width: 1068px) {
-  .site-header-title-1 {
+  .text-size-96 {
     line-height: 1.25;
     font-size: 56px;
     font-weight: 500;
     letter-spacing: -.005em;
   }
-  .local-header-title-1 {
+  .text-size-56 {
     line-height: 1.25;
     font-size: 48px;
     font-weight: 500;
     letter-spacing: -.003em;
   }
-  .section-title-2 {
+  .text-size-48 {
     line-height: 1.25;
     font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0em;
+  }
+  .text-size-40 {
+    line-height: 1.1;
+    font-size: 32px;
     font-weight: 500;
     letter-spacing: 0em;
   }
 }
 
 @media only screen and (max-width: 734px) {
-  .site-header-title-1 {
+  .text-size-96 {
     line-height: 1.25;
     font-size: 48px;
     font-weight: 500;
     letter-spacing: -.003em;
   }
-  .local-header-title-1 {
+  .text-size-56 {
     line-height: 1.25;
     font-size: 40px;
     font-weight: 500;
     letter-spacing: 0em;
   }
-  .section-title-2 {
-    line-height: 1.25;
+  .text-size-48 {
+    line-height: 1.1;
     font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 0em;
+  }
+  .text-size-40 {
+    line-height: 1.1;
+    font-size: 24px;
     font-weight: 500;
     letter-spacing: 0em;
   }
