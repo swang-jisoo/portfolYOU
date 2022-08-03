@@ -16,6 +16,7 @@
   transform: rotate(-90deg);
 }
 
+/* conic-gradient */
 @property --pgColor {
   syntax: '<color>';
   inherits: false;
@@ -48,7 +49,7 @@
   animation: growProgressBar 3s 1 forwards;
 }
 
-.circle-edge {
+/*.circle-edge {
     position: absolute;
     top: 0;
     left: 0;
@@ -72,17 +73,9 @@
     &::after {
         transform: rotate(90deg) translate(0, -90px) ;
     }
-}
+}*/
 
-
-
-
-
-
-
-
-
-
+/* round stroke */
 .svg-circle {
   position: relative;
   width: 100%;
@@ -119,7 +112,7 @@
   @return 360 - (360 * $num) / 100;
 }
 
-  
+/* caption */  
 .svg-caption {
   position: absolute;
   top: 50%;
