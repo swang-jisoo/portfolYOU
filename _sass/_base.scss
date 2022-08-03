@@ -46,6 +46,10 @@ body {
 
 
 // grid //
+#siteheader, #recentnews, #knowmore {
+  background: $color-blue-light;
+}
+
 .site-header-height {
   position: relative;
   overflow: hidden;
@@ -61,7 +65,14 @@ body {
   padding-bottom: 98px; //65px;
 }
 
-.section-height {
+.section-height-1 {
+  position: relative;
+  overflow: hidden;
+  padding-top: 91px;
+  padding-bottom: 65px;
+}
+
+.section-height-2 {
   position: relative;
   overflow: hidden;
   padding-top: 65px; //91px;
@@ -131,9 +142,13 @@ body {
     padding-top: 65px;
     padding-bottom: 40px;
   }
-  .section-height {
+  .section-height-1 {
     padding-top: 65px;
     padding-bottom: 40px;
+  }
+  .section-height-2 {
+    padding-top: 58px;
+    padding-bottom: 30px;
   }
   .section-width {
     margin-left: auto;
@@ -154,9 +169,13 @@ body {
     padding-top: 58px;
     padding-bottom: 30px;
   }
-  .section-height {
+  .section-height-1 {
     padding-top: 58px;
     padding-bottom: 30px;
+  }
+  .section-height-2 {
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
   .section-width {
     margin-left: auto;
@@ -273,6 +292,7 @@ body {
     letter-spacing: 0em;
   }
 }
+
 
 
 // trial //
