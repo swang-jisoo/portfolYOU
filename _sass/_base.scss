@@ -26,6 +26,8 @@ $color-blue-dark: #1E4F62;
 $color-pink: #D9ADA9; //highlight
 $color-yellow: #FFD49B; //selection
 
+$nav-height: 52px;
+
 // base //
 body {
   min-width: 320px;
@@ -42,12 +44,13 @@ body {
   letter-spacing: -0.022em;
 }
 
-// class //
+
+// grid //
 .site-header-height {
   position: relative;
   overflow: hidden;
   padding-top: 200px;
-  padding-bottom: 217px;
+  padding-bottom: 80px;
 }
 
 .local-header-height {
@@ -68,6 +71,12 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 936px; //980px;
+}
+
+.section-gallery {
+  overflow: hidden;
+  padding-top: 36px;
+  padding-bottom: 6px;
 }
 
 /*.row {
@@ -153,6 +162,9 @@ body {
     margin-right: auto;
     width: 87.5%;
   }
+  .section-gallery {
+    padding-top: 22px;
+  }
   .row-col2 {
     grid-auto-flow: row;
   }
@@ -162,11 +174,16 @@ body {
 }
 
 // design //
-.text-bright {
+::selection {
+  background-color: $color-yellow;
+  color: $color-grey-5;
+}
+
+.text-color-bright {
   color: $color-grey-0;
 }
 
-.text-highlight {
+.text-color-highlight {
   display: inline;
   padding: .25em 0;
   background: $color-pink;
@@ -174,30 +191,32 @@ body {
   box-shadow: .5em 0 0 $color-pink, -.5em 0 0 $color-pink;
 }
 
-::selection {
-  background-color: $color-yellow;
-  color: $color-grey-5;
-}
-
-.site-header-title-1 {
+.text-size-96 {
   line-height: 1.25;
-  font-size: 80px;
+  font-size: 96px;
   font-weight: 500;
   letter-spacing: -.015em;
 }
 
-.local-header-title-1 {
+.text-size-56 {
   line-height: 1.25;
   font-size: 56px;
   font-weight: 500;
   letter-spacing: -.005em;
 }
 
-.section-title-2 {
+.text-size-48 {
   line-height: 1.25;
   font-size: 48px;
   font-weight: 500;
   letter-spacing: -.003em;
+}
+
+.text-size-40 {
+  line-height: 1.1;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0em;
 }
 
 .text-prof-contatiner {
