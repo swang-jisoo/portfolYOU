@@ -1,7 +1,10 @@
-$circumference: 270;
-$r: 43; //57;
-$cx: 48; //62;
-$cy: 48; //62;
+$svg-circumference: 270;
+$svg-r: 43; //57;
+$svg-strokew: 10px;
+$svg-cx: 48; //62;
+$svg-cy: 48; //62;
+$svg-captionw: 50px; //65px;
+$svg-captionh: 30px; //40px;
 
 
 .circle-progressbar-container {
@@ -80,25 +83,25 @@ $cy: 48; //62;
 }
 
 .circle-frame {
-  cx: $cx;
-  cy: $cy; 
-  r: $r; 
+  cx: $svg-cx;
+  cy: $svg-cy; 
+  r: $svg-r; 
   fill: none;
   stroke: $color-grey-0;
   stroke-opacity: .8;
-  stroke-width: 10px;
+  stroke-width: $svg-strokew;
 }
 
 .circle-graph {
-  cx: $cx;
-  cy: $cy; 
-  r: $r; 
+  cx: $svg-cx;
+  cy: $svg-cy; 
+  r: $svg-r; 
   fill: none;
   stroke: var(--color);
-  stroke-width: 10px;
+  stroke-width: $svg-strokew;
   stroke-linecap: round;
-  stroke-dasharray: $circumference;
-  stroke-dashoffset: calc($circumference - ($circumference * var(--value)) / 100); //360;
+  stroke-dasharray: $svg-circumference;
+  stroke-dashoffset: calc($svg-circumference - ($svg-circumference * var(--value)) / 100); //360;
   //animation: anim_circle 2s linear forwards;
 }
 
@@ -121,8 +124,8 @@ $cy: 48; //62;
   //left: 0;
   //right: 0;
   //bottom: 0;
-  weight: 65px;
-  height: 40px;
+  weight: $svg-captionw;
+  height: $svg-captionh;
   text-align: center;
   //font-size: 16px;
   //line-height: 120px;
