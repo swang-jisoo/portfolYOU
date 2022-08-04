@@ -36,17 +36,26 @@ layout: default
     
     <h2 class="section-title-3 text-center">Brief Bio</h2>
     
-    <div id="experience" class="row-col2">
-      <div class="container-col2-bg">
+    <!--<div id="experience" class="row-col2">-->
+    <div id="experience" class="row-col2 padding-top-50 padding-bottom-50">
+      <!--<div class="card-col2-bg">-->
+      <!--<div class="column large-4 large-offset-1 small-12 small-offset-0 small-column-padding-vertical">-->
+      <div class="column large-4 large-offset-1 small-12">
         {% include about/timeline_light.html title="Work & Research" source=site.data.experience %}
       </div>
-      <div class="container-col2-bg">
+      <!--<div class="card-col2-bg">-->
+      <!--<div class="column large-4 large-offset-1 small-12 small-offset-0 small-column-padding-vertical">-->
+      <div class="column large-4 large-offset-1 small-12">
         {% include about/timeline_light.html title="Education" source=site.data.education %}
       </div>
     </div>
     
-    <div id="skills" class="container-col1-bg">
-      {% include about/progress.html shape="circle" title="Technical Skills" source=site.data.programming-skills %}
+    <!--<div id="skills" class="card-col1-bg">-->
+    <div id="skills" class="row-col1">
+      <!--<div class="column large-4 large-offset-1 small-12 small-offset-0 small-column-padding-vertical">-->
+      <div class="column large-4 large-offset-1 small-12">
+        {% include about/progress.html shape="circle" title="Technical Skills" source=site.data.programming-skills %}
+      </div>
     </div>
     
   </div>
