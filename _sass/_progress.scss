@@ -4,6 +4,7 @@ $svg-strokew: 10px;
 $svg-cx: 48; //62; // r - (strokew / 2)
 $svg-cy: 48; //62;
 $svg-itemwh: 96px; //124px; // cx * 2
+$svg-itemm: 5px; //12px 1em; 
 $svg-captionw: 50px; //65px; 
 $svg-captionh: 30px; //40px; // r * 0.7
 
@@ -22,7 +23,7 @@ $svg-captionh: 30px; //40px; // r * 0.7
   position: relative;
   width: $svg-itemwh;
   height: $svg-itemwh;
-  margin: 12px 1em;
+  margin: $svg-itemm;
   transform: rotate(-90deg);
 }
 
