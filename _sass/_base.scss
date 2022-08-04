@@ -83,11 +83,12 @@ body {
   width: 936px; //980px;
 }
 
-.section-gallery {
+/*.section-gallery {
+  position: relative;
   overflow: hidden;
   padding-top: 36px;
   padding-bottom: 6px;
-}
+}*/
 
 /*.row {
   display: flex;
@@ -104,22 +105,42 @@ body {
   min-width: 0px;
 }*/
 
+.padding-top-50 {
+  padding-top: 50px;
+}
+
+.padding-bottom-50 {
+  padding-bottom: 50px;
+}
+
+.large-offset-1 {
+  margin-left: 8.33333%;
+}
+
+.row-col1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 50px 0;
+  width: 100%;
+}
+
 .row-col2 {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
   grid-gap: 24px;
-  margin: 24px 0;
+  margin: 50px 0;
 }
 
-.container-col1-bg {
+.card-col1-bg {
   overflow: hidden;
   padding: 45px 50px 60px;  
   background: $color-blue-light; 
   border-radius: 20px;
 }
 
-.container-col2-bg {
+.card-col2-bg {
   position: relative;
   display: flex;
   flex-direction: column;
