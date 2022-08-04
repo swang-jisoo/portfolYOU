@@ -1,10 +1,11 @@
 $svg-circumference: 270;
-$svg-r: 43; //57;
+$svg-r: 43; //57; // circumference / 2 / 3.14
 $svg-strokew: 10px;
-$svg-cx: 48; //62;
+$svg-cx: 48; //62; // r - (strokew / 2)
 $svg-cy: 48; //62;
-$svg-captionw: 50px; //65px;
-$svg-captionh: 30px; //40px;
+$svg-itemwh: 96px; //124px; // cx * 2
+$svg-captionw: 50px; //65px; 
+$svg-captionh: 30px; //40px; // r * 0.7
 
 
 .circle-progressbar-container {
@@ -19,8 +20,8 @@ $svg-captionh: 30px; //40px;
 
 .circle-progressbar-item {
   position: relative;
-  width: 124px;
-  height: 124px;
+  width: $svg-itemwh;
+  height: $svg-itemwh;
   margin: 12px 1em;
   transform: rotate(-90deg);
 }
