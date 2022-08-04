@@ -102,7 +102,7 @@ $svg-captionh: 30px; //40px; // r * 0.7
   stroke-width: $svg-strokew;
   stroke-linecap: round;
   stroke-dasharray: $svg-circumference;
-  stroke-dashoffset: calc($svg-circumference - ($svg-circumference * var(--value)) / 100); //360;
+  stroke-dashoffset: calc( var($svg-circumference) - ( var($svg-circumference) * var(--value) ) / 100 ); //360;
   //animation: anim_circle 2s linear forwards;
 }
 
