@@ -1,6 +1,8 @@
+$circumference: 270;
+$r: 43; //57;
 $cx: 48; //62;
 $cy: 48; //62;
-$r: 43; //57;
+
 
 .circle-progressbar-container {
   display: flex;
@@ -78,9 +80,9 @@ $r: 43; //57;
 }
 
 .circle-frame {
-  cx: var(--cx);
-  cy: var(--cy); 
-  r: var(--r); 
+  cx: $cx;
+  cy: $cy; 
+  r: $r; 
   fill: none;
   stroke: $color-grey-0;
   stroke-opacity: .8;
@@ -88,15 +90,15 @@ $r: 43; //57;
 }
 
 .circle-graph {
-  cx: var(--cx);
-  cy: var(--cy); 
-  r: var(--r);
+  cx: $cx;
+  cy: $cy; 
+  r: $r; 
   fill: none;
   stroke: var(--color);
   stroke-width: 10px;
   stroke-linecap: round;
-  stroke-dasharray: 360;
-  stroke-dashoffset: calc(360 - (360 * var(--value)) / 100); //360;
+  stroke-dasharray: $circumference;
+  stroke-dashoffset: calc($circumference - ($circumference * var(--value)) / 100); //360;
   //animation: anim_circle 2s linear forwards;
 }
 
