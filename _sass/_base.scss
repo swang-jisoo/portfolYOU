@@ -29,6 +29,16 @@ body {
 }
 
 
+// customized container //
+#recentnews, #knowmore {
+  background-color: $color-blue-light;
+}
+
+#research {
+  background-color: $color-blue-dark;
+}
+
+
 // grid //
 .site-header-height {
   position: relative;
@@ -49,7 +59,7 @@ body {
   position: relative;
   overflow: hidden;
   padding-top: 130px;
-  padding-bottom: 30px;
+  padding-bottom: 130px;
 }
 
 .section-height-2 {
@@ -143,7 +153,7 @@ body {
   }
   .section-height-1 {
     padding-top: 110px;
-    padding-bottom: 20px;
+    padding-bottom: 110px;
   }
   .section-height-2 {
     padding-top: 60px;
@@ -170,7 +180,7 @@ body {
   }
   .section-height-1 {
     padding-top: 90px;
-    padding-bottom: 10px;
+    padding-bottom: 90px;
   }
   .section-height-2 {
     padding-top: 40px;
@@ -359,10 +369,6 @@ body {
   //background-repeat: no-repeat;
 }
 
-// customized container //
-#recentnews, #knowmore {
-  background-color: $color-blue-light;
-}
 
 /*
 .outer-container {
