@@ -1,7 +1,7 @@
 $color-grey-0: #F2F2F2; //bg, txt-light
 $color-grey-1: #D9D9D9;
 $color-grey-2: #A6A6A6;
-$color-grey-3: #737373;
+$color-grey-3: #737373; //txt-grey
 $color-grey-4: #404040;
 $color-grey-5: #0D0D0D; //txt-dark
 $color-blue-light: #E2E6EF; // overlay-bg
@@ -198,8 +198,12 @@ body {
   color: $color-grey-5;
 }
 
-.text-color-bright {
+.text-color-white {
   color: $color-grey-0;
+}
+
+.text-color-grey {
+  color: $color-grey-3;
 }
 
 .text-color-highlight {
