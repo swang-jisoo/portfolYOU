@@ -1,22 +1,20 @@
-<!--<div class="col-lg">-->
-  <h4 class="section-title-5 mb-4">{{ include.title }}</h4>
+<h4 class="section-title-5 mb-4">{{ include.title }}</h4>
 
-  <div class="tiemline-body">
-    {% for item in include.source %}
-      <div class="timeline-item">
-        {% if item.from and item.to %}
-          <small class="date text-color-grey">{{ item.from }} — {{ item.to }}</small>
-        {% elsif item.date %}
-          <small class="date text-color-grey">{{ item.date }}</small>
-        {% endif %}
+<div class="tiemline-body">
+  {% for item in include.source %}
+    <div class="timeline-item">
+      {% if item.from and item.to %}
+        <small class="date text-color-grey">{{ item.from }} — {{ item.to }}</small>
+      {% elsif item.date %}
+        <small class="date text-color-grey">{{ item.date }}</small>
+      {% endif %}
         
-        <p class="margin-0"><strong>{{ item.location }}</strong></p>
-        <p>{{ item.title }}</p>
+      <p class="margin-0"><strong>{{ item.location }}</strong></p>
+      <p>{{ item.title }}</p>
 
-        {% if item.description %}
-          <p>{{ item.description }}</p>
-        {% endif %}
-      </div>
-    {% endfor %}
-  </div>
-<!--</div>-->
+      {% if item.description %}
+        <p>{{ item.description }}</p>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
