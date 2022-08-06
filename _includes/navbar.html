@@ -16,7 +16,10 @@
     <!-- ## <div class="navbar-collapse collapse" id="navbarNavAltMarkup"> -->
     <div class="nav-menu">
       <!-- ## <div class="navbar-nav ml-auto"> -->
-
+        <a class="nav-menu-link" href='{{ site.baseurl }}/#briefbio'>Resume</a>
+        <a class="nav-menu-link" href='{{ site.baseurl }}/#research'>Research</a>
+        <a class="nav-menu-link" href='{{ site.baseurl }}/#knowmore'>More</a>
+      
         {%- assign html_pages = site.html_pages | sort: 'weight' -%}
         {%- assign filtered_pages = "" | split: "" -%}
 
@@ -56,11 +59,7 @@
           {%- else -%}
             {%- assign url = html_page.url | relative_url -%}
           {%- endif -%}
-      
-          <a class="nav-menu-link" href='{{ site.baseurl }}/#briefbio'>Resume</a>
-          <a class="nav-menu-link" href='{{ site.baseurl }}/#research'>Research</a>
-          <a class="nav-menu-link" href='{{ site.baseurl }}/#knowmore'>More</a>
-      
+            
           <a class="nav-menu-link {{ active_status }}" 
              href="{{ url }}" {%- if html_page.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}
              >
