@@ -243,6 +243,13 @@ body {
   letter-spacing: 0em;
 }
 
+.section-title-5 {
+  line-height: 1.125;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0.004em;
+}
+
 @media only screen and (max-width: 1068px) {
   .section-title-1 {
     margin: 1em 0;
@@ -258,16 +265,22 @@ body {
     letter-spacing: -.003em;
   }
   .section-title-3 {
-    line-height: 1.25;
+    line-height: 1.1;
     font-size: 40px;
     font-weight: 500;
     letter-spacing: 0em;
   }
   .section-title-4 {
-    line-height: 1.1;
+    line-height: 1.125;
     font-size: 32px;
     font-weight: 500;
-    letter-spacing: 0em;
+    letter-spacing: 0.004em;
+  }
+  .section-title-5 {
+    line-height: 1.143;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0.007em;
   }
 }
 
@@ -280,22 +293,28 @@ body {
     letter-spacing: -.003em;
   }
   .section-title-2 {
-    line-height: 1.25;
+    line-height: 1.1;
     font-size: 40px;
     font-weight: 500;
     letter-spacing: 0em;
   }
   .section-title-3 {
-    line-height: 1.1;
+    line-height: 1.125;
     font-size: 32px;
     font-weight: 500;
-    letter-spacing: 0em;
+    letter-spacing: 0.004em;
   }
   .section-title-4 {
-    line-height: 1.1;
+    line-height: 1.143;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0.007em;
+  }
+  .section-title-5 {
+    line-height: 1.143;
     font-size: 24px;
     font-weight: 500;
-    letter-spacing: 0em;
+    letter-spacing: 0.007em;
   }
 }
 
