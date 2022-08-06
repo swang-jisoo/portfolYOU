@@ -105,7 +105,7 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   margin: 50px;
-  width: 100%;
+  //width: calc(936 - (50 * 2)); //100%;
 }
 
 .row-col2 {
