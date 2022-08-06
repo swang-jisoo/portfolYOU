@@ -5,10 +5,6 @@
       <a class="nav-title-link" href="{{ site.baseurl }}/">{{ site.title }}</a>
     </span>
     
-    <a class="nav-menu-link" href='{{ site.baseurl }}/#briefbio'>Resume</a>
-    <a class="nav-menu-link" href='{{ site.baseurl }}/#research'>Research</a>
-    <a class="nav-menu-link" href='{{ site.baseurl }}/#knowmore'>More</a>
-    
     <!-- ## <button class="navbar-toggler" type="button" 
             data-toggle="collapse" 
             data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
@@ -60,6 +56,10 @@
           {%- else -%}
             {%- assign url = html_page.url | relative_url -%}
           {%- endif -%}
+      
+          <a class="nav-menu-link" href='{{ site.baseurl }}/#briefbio'>Resume</a>
+          <a class="nav-menu-link" href='{{ site.baseurl }}/#research'>Research</a>
+          <a class="nav-menu-link" href='{{ site.baseurl }}/#knowmore'>More</a>
       
           <a class="nav-menu-link {{ active_status }}" 
              href="{{ url }}" {%- if html_page.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}
