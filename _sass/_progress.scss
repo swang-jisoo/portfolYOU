@@ -12,7 +12,8 @@ $svg-captionh: 30px; //40px; // r * 0.7
 .circle-progressbar-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  flex-basis: 17%;
+  //justify-content: space-between;
   align-items: center;
   margin-top: -50px;
   //min-width: 270px;
