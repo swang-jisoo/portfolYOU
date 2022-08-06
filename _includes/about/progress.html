@@ -12,13 +12,13 @@
           <svg class="svg-circle">
             <circle class="circle-frame" ></circle>
             <circle class="circle-graph" 
-                    title="{{ item.name }}: {{ item.percentage }}"
                     style="--color: #{{ item.color }};
                            --value: {{ item.percentage }}" 
                     >
             </circle>
           </svg>
-          <img class="svg-caption" src="{{ item.icon }}" alt="{{ item.name }}">
+          <img class="svg-caption" src="{{ item.icon }}" alt="{{ item.name }}"
+               title="{{ item.name }}: {{ item.percentage }}%">
         </div>
       {% endfor %}
     </div>
