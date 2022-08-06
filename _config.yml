@@ -52,12 +52,14 @@ exclude:
 
 ### Navbar Settings ###
 nav_exclude:
+  - docs/documentation/**
   - docs/pages/tags.html
   - docs/pages/404.html
   - docs/pages/index.md
-  - docs/documentation/**
-  #- docs/pages/blog.html  # split_nav
+  - docs/pages/about.html
   - docs/pages/more.html
+  - docs/pages/projects.html
+  #- docs/pages/blog.html  # split_nav
   
 #split_nav:
 #  - docs/pages/blog.html
