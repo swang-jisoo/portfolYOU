@@ -5,9 +5,9 @@
     {% for item in include.source %}
       <div class="timeline-item">
         {% if item.from and item.to %}
-          <small class="date">{{ item.from }} — {{ item.to }}</small>
+          <small class="date text-color-grey">{{ item.from }} — {{ item.to }}</small>
         {% elsif item.date %}
-          <small class="date">{{ item.date }}</small>
+          <small class="date text-color-grey">{{ item.date }}</small>
         {% endif %}
         
         <p class="margin-0">{{ item.location }}</h4>
