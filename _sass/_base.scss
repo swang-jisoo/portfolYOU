@@ -89,18 +89,6 @@ body {
   min-width: 0px;
 }*/
 
-.padding-top-50 {
-  padding-top: 50px;
-}
-
-.padding-bottom-50 {
-  padding-bottom: 50px;
-}
-
-.large-offset-1 {
-  margin-left: 8.33333%;
-}
-
 .row-col1 {
   display: flex;
   flex-wrap: wrap;
@@ -113,7 +101,7 @@ body {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
-  grid-gap: 50px;
+  grid-gap: 80px;
   margin: 50px;
 }
 
